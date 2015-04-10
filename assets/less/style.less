@@ -1,12 +1,15 @@
 @import "variables.less";
 @import "mixins.less";
 
+
 // Global Components
 html,
 body {
     height: 100%;
     width: 100%;
 }
+
+
 
 body {
     .roya-font;
@@ -37,11 +40,11 @@ h3,
 h4,
 h5,
 h6 {
-    .sans-roya-font;
+    .roya-font;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -76,11 +79,11 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: fade(@theme-dark, 5%);
-    .sans-roya-font;
+    .roya-font;
     .transition-all;
     .navbar-header .navbar-brand {
         color: @theme-primary;
-        .sans-roya-font;
+        .roya-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
@@ -248,7 +251,7 @@ header {
             transform: translateY(-50%);
             .project-category,
             .project-name {
-                .sans-roya-font;
+                .roya-font;
                 padding: 0 15px;
             }
             .project-category {
@@ -306,7 +309,7 @@ header {
 }
 
 .btn {
-    .sans-roya-font;
+    .roya-font;
     border: none;
     border-radius: 300px;
     font-weight: 700;
@@ -343,4 +346,54 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-dark;
+}
+
+//People
+
+
+.profile {
+    margin: 0;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    color: inherit;
+    white-space: nowrap;
+    font-size: 1em;
+}
+
+.profile:hover {
+    color: #FA7161;
+}
+
+.profile img:hover {
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter:none;
+    filter: none;
+}
+
+.profile img {
+
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+    -webkit-filter: grayscale(95%);
+    -moz-filter: grayscale(95%);
+    -o-filter: grayscale(95%);
+    filter: grayscale(95%);
+
+    -webkit-backface-visibility: hidden;
+
+    border-radius: 50%;
+    border: 1em solid transparent;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile {
+    text-decoration: none !important;
 }
