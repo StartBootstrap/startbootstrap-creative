@@ -6,8 +6,13 @@ This theme is used for Amirkabir Linux Festival which is held annually
 
 + Students at Amirkabir university 
 
-+ Originally created by  **David Miller**,
-Managing Partner at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/) 
+## 3rd Party projects
+
+ + Theme originally created by  **David Miller**,
+ Managing Partner at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/)
+ + Bootstrap
+ + Bootstrap-RTL by morteza
+ + Roya persian font
  
 ## License
 
