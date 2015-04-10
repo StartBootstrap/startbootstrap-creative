@@ -4,11 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-(function($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
+    $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
@@ -23,7 +23,7 @@
     })
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
+    $('.navbar-collapse ul li a').click(function () {
         $('.navbar-toggle:visible').click();
     });
 
@@ -45,4 +45,22 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+
 })(jQuery); // End of use strict
+
+function initmap() {
+    function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+            center: new google.maps.LatLng(36.308426, 59.576984),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel:false
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
