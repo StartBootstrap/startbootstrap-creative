@@ -75,101 +75,46 @@ aside {
 .no-padding {
     padding: 0;
 }
-
-.navbar-default {
-    border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+.navbar {
+    min-height:50px;
+}
+.site-navbar {
+}
+.carousel {
+    margin-top: 50px;
+}
+.btn-success {
+}
+.navbar-brand {
+    color:#f89d29 !important;
+    font-size:2em !important;
+    line-height:40px;
+}
+.navbar-nav>li>a{
+    line-height:40px;
+}
+.img-circle{
+    height:28px;
 }
 
-.navbar-default .navbar-header .navbar-brand {
-    text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
-    color: #f79210;
+
+.site-navbar .navbar-header a.navbar-brand {
+    font-size: 18px;
+    color: #fff;
+    padding: 17px 15px;
 }
-
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+.site-navbar .navbar-collapse .navbar-nav > li > a {
+    font-size: 14px;
+    color: #fff;
+    padding: 17px 15px;
 }
-
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    color: #222;
+.nav-list > li.active > a {
+    background-color: #f89d29;
+    color: #333;
 }
-
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-    color: #f79210;
-}
-
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
-    color: #f79210!important;
-    background-color: transparent;
-}
-
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
-    background-color: transparent;
-}
-
-@media(min-width:768px) {
-    .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
-    }
-
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
-    }
-
-    .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
-        background-color: #fff;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
-        color: #f79210;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
-    }
-
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #222;
-    }
-
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f79210;
-    }
+.site-navbar .navbar-nav > li > a:hover {
+    background-color: #f89d29;
+    color: #fff;
 }
 
 header {
@@ -475,4 +420,5 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+    font-family: "微软雅黑", arial, sans-serif !important;
 }
