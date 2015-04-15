@@ -422,3 +422,8 @@ body {
     webkit-tap-highlight-color: #222;
     font-family: "微软雅黑", arial, sans-serif !important;
 }
+
+.timeline {
+    width: 100%;
+    height: 400px;
+}
