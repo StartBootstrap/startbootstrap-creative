@@ -318,6 +318,12 @@ header .header-content .header-content-inner p {
     }
 }
 
+@media(max-width:991px) {
+  .portfolio-box .portfolio-box-caption {
+      opacity: .7;
+  }
+}
+
 .call-to-action h2 {
     margin: 0 auto 20px;
 }
