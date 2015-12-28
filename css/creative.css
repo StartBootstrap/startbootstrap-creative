@@ -12,6 +12,7 @@ body {
 
 body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
 }
 
 hr {
@@ -61,7 +62,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.9);
 }
 
 section {
@@ -128,7 +129,7 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.9);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -138,7 +139,7 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.9);
     }
 
     .navbar-default .nav > li>a:hover,
@@ -208,7 +209,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.9);
 }
 
 @media(min-width:768px) {
