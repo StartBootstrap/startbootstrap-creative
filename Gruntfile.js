@@ -3,19 +3,26 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        banner: '/*!\n' +
+            ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Copyright 2013-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+            ' */\n',
+
         uglify: {
             main: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                src: 'src/js/<%= pkg.name %>.js',
+                dest: 'build/js/<%= pkg.name %>.min.js'
             }
         },
+
         less: {
             expanded: {
                 options: {
                     paths: ["css"]
                 },
                 files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    "build/css/<%= pkg.name %>.css": "src/less/<%= pkg.name %>.less"
                 }
             },
             minified: {
@@ -24,15 +31,11 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    "build/css/<%= pkg.name %>.min.css": "src/less/<%= pkg.name %>.less"
                 }
             }
         },
-        banner: '/*!\n' +
-            ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright 2013-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-            ' */\n',
+       
         usebanner: {
             dist: {
                 options: {
@@ -40,20 +43,25 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: [
+                        'build/css/<%= pkg.name %>.css', 
+                        'build/css/<%= pkg.name %>.min.css', 
+                        'build/js/<%= pkg.name %>.min.js'
+                        ]
                 }
             }
         },
+
         watch: {
             scripts: {
-                files: ['js/<%= pkg.name %>.js'],
+                files: ['src/**/*.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn: false,
                 },
             },
             less: {
-                files: ['less/*.less'],
+                files: ['src/**/*.less'],
                 tasks: ['less'],
                 options: {
                     spawn: false,
