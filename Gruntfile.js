@@ -68,6 +68,18 @@ module.exports = function(grunt) {
                 }
             },
         },
+
+        copy: {
+          libs: {
+            expand: true,
+            cwd: 'src',
+            src: [
+                'libs/**/*',
+                'img/**/*'
+                ],
+            dest: 'build/',
+          },
+        },
     });
 
     // Load the plugins.
@@ -75,6 +87,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
