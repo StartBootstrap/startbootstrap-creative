@@ -80,6 +80,18 @@ module.exports = function(grunt) {
             dest: 'build/',
           },
         },
+
+        htmlmin: {                                     
+            dist: {                                     
+              options: {                                
+                removeComments: false,
+                collapseWhitespace: true
+              },
+              files: {                              
+                'build/index.html': 'src/index.html'
+              }
+            }
+        }
     });
 
     // Load the plugins.
