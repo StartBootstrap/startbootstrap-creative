@@ -31,6 +31,23 @@ module.exports = function(grunt) {
                 files: {
                     "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
                 }
+            },
+            custom: {
+                options: {
+                    paths: ["css"],
+                    plugins: [
+                        (new (require('less-plugin-clean-css'))({
+                            advanced: true,
+                            compatibility: 'ie8'
+                        }))
+                    ],
+                    modifyVars: {
+                        'theme-primary': grunt.option('theme-primary')
+                    }
+                },
+                files: {
+                    "css/<%= pkg.name %>.custom.min.css": "less/<%= pkg.name %>.less"
+                }
             }
         },
         banner: '/*!\n' +
@@ -92,6 +109,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
-
+    grunt.registerTask('default', ['uglify', 'less:expanded', 'less:minified', 'usebanner']);
+    grunt.registerTask('custom', ['less:custom']);
 };
