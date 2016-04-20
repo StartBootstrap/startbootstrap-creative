@@ -4,10 +4,7 @@
   "version": "1.0.3",
   "homepage": "http://startbootstrap.com/template-overviews/creative",
   "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.1"
