@@ -60,6 +60,13 @@ module.exports = function(grunt) {
                 }
             },
         },
+        copy: {
+            main: {
+                files: [
+                    { expand: true, cwd: 'node_modules/font-awesome', src: ['css/*', 'fonts/*', 'less/*', 'scss/*'], dest: 'font-awesome/' },
+                ],
+            },
+        },
     });
 
     // Load the plugins.
@@ -67,6 +74,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
