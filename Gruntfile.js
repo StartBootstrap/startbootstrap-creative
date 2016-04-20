@@ -71,6 +71,11 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'node_modules/font-awesome', src: ['css/*', 'fonts/*', 'less/*', 'scss/*'], dest: 'font-awesome/' },
                 ],
             },
+            'jquery': {
+                files: [
+                    { expand: true, cwd: 'node_modules/jquery/dist', src: ['jquery.js'], dest: 'js/' },
+                ],
+            },
         },
     });
 
