@@ -98,6 +98,11 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'node_modules/jquery/dist', src: ['jquery.js'], dest: 'js/' },
                 ],
             },
+            'jquery.fittext': {
+                files: [
+                    { expand: true, cwd: 'node_modules/fittext.js', src: ['jquery.fittext.js'], dest: 'js/' },
+                ],
+            },
         },
     });
 

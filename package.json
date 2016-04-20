@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "fittext.js": "^1.2.0",
     "font-awesome": "^4.6.1",
     "jquery": "^2.2.3"
   },
