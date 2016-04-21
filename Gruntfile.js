@@ -21,17 +21,39 @@ module.exports = function(grunt) {
             minified: {
                 options: {
                     paths: ["css"],
-                    cleancss: true
+                    plugins: [
+                        (new (require('less-plugin-clean-css'))({
+                            advanced: true,
+                            compatibility: 'ie8'
+                        }))
+                    ]
                 },
                 files: {
                     "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                }
+            },
+            custom: {
+                options: {
+                    paths: ["css"],
+                    plugins: [
+                        (new (require('less-plugin-clean-css'))({
+                            advanced: true,
+                            compatibility: 'ie8'
+                        }))
+                    ],
+                    modifyVars: {
+                        'theme-primary': grunt.option('theme-primary')
+                    }
+                },
+                files: {
+                    "css/<%= pkg.name %>.custom.min.css": "less/<%= pkg.name %>.less"
                 }
             }
         },
         banner: '/*!\n' +
             ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2013-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+            ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)\n' +
             ' */\n',
         usebanner: {
             dist: {
@@ -60,6 +82,28 @@ module.exports = function(grunt) {
                 }
             },
         },
+        copy: {
+            'bootstrap': {
+                files: [
+                    { expand: true, cwd: 'node_modules/bootstrap/dist', src: ['css/bootstrap.*.css', 'fonts/*', 'js/*', '!js/npm.js'], dest: '.' },
+                ],
+            },
+            'font-awesome': {
+                files: [
+                    { expand: true, cwd: 'node_modules/font-awesome', src: ['css/*', 'fonts/*', 'less/*', 'scss/*'], dest: 'font-awesome/' },
+                ],
+            },
+            'jquery': {
+                files: [
+                    { expand: true, cwd: 'node_modules/jquery/dist', src: ['jquery.js'], dest: 'js/' },
+                ],
+            },
+            'jquery.fittext': {
+                files: [
+                    { expand: true, cwd: 'node_modules/fittext.js', src: ['jquery.fittext.js'], dest: 'js/' },
+                ],
+            },
+        },
     });
 
     // Load the plugins.
@@ -67,8 +111,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
-
+    grunt.registerTask('default', ['uglify', 'less:expanded', 'less:minified', 'usebanner']);
+    grunt.registerTask('custom', ['less:custom']);
 };
