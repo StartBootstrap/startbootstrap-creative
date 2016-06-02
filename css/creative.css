@@ -1,5 +1,5 @@
 /*!
- * Creative v1.0.3 (http://startbootstrap.com/template-overviews/creative)
+ * Creative v1.0.4 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
@@ -256,6 +256,9 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+.portfolio-box:focus {
+  outline: none;
 }
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
