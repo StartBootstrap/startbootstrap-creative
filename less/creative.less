@@ -51,7 +51,7 @@ p {
 }
 
 .bg-dark {
-    background-color: @theme-dark;
+    background-color: @gray-darker;
     color: white;
 }
 
@@ -75,7 +75,7 @@ aside {
 
 .navbar-default {
     background-color: white;
-    border-color: fade(@theme-dark, 5%);
+    border-color: fade(@gray-darker, 5%);
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
@@ -91,7 +91,7 @@ aside {
     .navbar-header .navbar-toggle {
         font-weight: 700;
         font-size: 12px;
-        color: @theme-dark;
+        color: @gray-darker;
         text-transform: uppercase;
     }
     .nav {
@@ -101,7 +101,7 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: @theme-dark;
+                color: @gray-darker;
                 &:hover {
                     color: @theme-primary;
                 }
@@ -137,7 +137,7 @@ aside {
         }
         &.affix {
             background-color: white;
-            border-color: fade(@theme-dark, 5%);
+            border-color: fade(@gray-darker, 5%);
             .navbar-header .navbar-brand {
                 color: @theme-primary;
                 font-size: 14px;
@@ -148,7 +148,7 @@ aside {
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: @theme-dark;
+                color: @gray-darker;
                 &:hover {
                     color: @theme-primary;
                 }
@@ -313,7 +313,7 @@ header {
 
 // Button Styles
 .btn-default {
-    .button-variant(@theme-dark;white;white);
+    .button-variant(@gray-darker;white;white);
 }
 
 .btn-primary {
@@ -337,13 +337,13 @@ header {
 ::-moz-selection {
     color: white;
     text-shadow: none;
-    background: @theme-dark;
+    background: @gray-darker;
 }
 
 ::selection {
     color: white;
     text-shadow: none;
-    background: @theme-dark;
+    background: @gray-darker;
 }
 
 img::selection {
@@ -357,5 +357,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: @theme-dark;
+    webkit-tap-highlight-color: @gray-darker;
 }
