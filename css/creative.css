@@ -1,18 +1,19 @@
 /*!
- * Start Bootstrap - Creative v1.1.0 (http://startbootstrap.com/template-overviews/creative)
+ * Creative v1.0.4 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #F05F40;
+  border-color: #f05f40;
   border-width: 3px;
   max-width: 50px;
 }
@@ -23,11 +24,12 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #ffffff;
+  text-decoration:none;
+  cursor: pointer; cursor: hand
 }
 h1,
 h2,
@@ -35,15 +37,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 40px;
 }
 p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #fff;
 }
 .bg-dark {
   background-color: #222222;
@@ -63,42 +66,37 @@ aside {
 }
 .navbar-default {
   background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+  border-color: #959CEC;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: #959CEC;
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #eb3812;
 }
-.navbar-default .navbar-header .navbar-toggle {
-  font-weight: 700;
-  font-size: 12px;
-  color: #222222;
-  text-transform: uppercase;
-}
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
   color: #222222;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+  color: #959CEC;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #959CEC !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -108,7 +106,8 @@ aside {
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 0px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -127,15 +126,14 @@ aside {
   }
   .navbar-default.affix {
     background-color: white;
-    border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
+    color: #959CEC;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #686EB8;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -143,7 +141,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: #686EB8;
   }
 }
 header {
@@ -155,9 +153,9 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+  background-color: #959CEC;
   text-align: center;
-  color: white;
+  color: #E9EBFC;
 }
 header .header-content {
   position: relative;
@@ -167,10 +165,9 @@ header .header-content {
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
-  text-transform: uppercase;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -198,9 +195,6 @@ header .header-content .header-content-inner p {
     margin-left: auto;
     margin-right: auto;
   }
-  header .header-content .header-content-inner h1 {
-    font-size: 50px;
-  }
   header .header-content .header-content-inner p {
     font-size: 18px;
     max-width: 80%;
@@ -210,6 +204,7 @@ header .header-content .header-content-inner p {
 }
 .section-heading {
   margin-top: 0;
+  color:#424242;
 }
 .service-box {
   max-width: 400px;
@@ -281,7 +276,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #F05F40;
+  color: #f05f40;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -289,8 +284,8 @@ header .header-content .header-content-inner p {
 }
 .btn-default {
   color: #222222;
-  background-color: white;
-  border-color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -328,17 +323,17 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: white;
-  border-color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-default .badge {
-  color: white;
+  color: #ffffff;
   background-color: #222222;
 }
 .btn-primary {
-  color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
+  color: #ffffff;
+  background-color: #686EB8;
+  border-color: #4A5097;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -349,9 +344,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
+  color: #ffffff;
+  background-color: #4A5097;
+  border-color: #4A5097;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -376,22 +371,21 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #f05f40;
+  border-color: #f05f40;
 }
 .btn-primary .badge {
-  color: #F05F40;
-  background-color: white;
+  color: #f05f40;
+  background-color: #ffffff;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
+  border-width: 1px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .btn-xl {
-  padding: 15px 30px;
+  padding: 8px 15px;
 }
 ::-moz-selection {
   color: white;
@@ -413,4 +407,66 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.email {
+  border-color: white;
+  border-width:1px;
+  border-radius: 4px;
+  background-color: #AAAFEF;
+  height:39px;
+  width:242px;
+  margin-right:5px;
+  color: white;
+  padding-left: 10px;
+  font-size:16px;
+}
+::-webkit-input-placeholder {
+    color: #E9EBFC;
+  }
+
+:-moz-placeholder { /* Firefox 18- */
+     color: #E9EBFC;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+     color: #E9EBFC;
+}
+
+:-ms-input-placeholder {
+     color: #E9EBFC;
+}
+
+input {
+  border: 1px solid white;
+  outline: white;
+}
+
+input:focus {
+    background-color: #959CEC;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.btn-login {
+  color: #E9EBFC;
+  background-color: #959CEC;
+  border-color: #E9EBFC;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-login:hover,
+.btn-login:focus,
+.btn-login.focus,
+.btn-login:active,
+.btn-login.active,
+.open > .dropdown-toggle.btn-login {
+  color: #fff;
+  background-color: #AAAFEF;
+  border-color: #fff;
+  cursor:pointer;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: none;
 }
