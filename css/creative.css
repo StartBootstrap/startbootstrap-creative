@@ -414,3 +414,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+/*/my addons/*/
+#Login{
+background-color:	#ffbf00;
+  border-radius:0px;
+}
+#about{
+background-color:	#ffbf00;
+}
