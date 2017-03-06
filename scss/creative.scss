@@ -113,7 +113,7 @@ aside {
             }
         }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         background-color: transparent;
         border-color: fade-out(white, 0.7);
         .navbar-brand {
@@ -135,7 +135,7 @@ aside {
             border-color: fade-out($gray-darker, 0.95);
             .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
+                font-size: 16px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 0.1);
