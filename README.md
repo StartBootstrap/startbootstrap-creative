@@ -1,27 +1,47 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Creative](http://startbootstrap.com/template-overviews/creative/)
 
-[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+# Zach Parris Porfolio Website
+## [zachparris.com](zachparris.com)  
 
-## Getting Started
+### [NSS](http://nashvillesoftwareschool.com/) Evening Cohort 3  
+##### Instructors - [Joe Shephard](https://github.com/JoeShep)(Front-End) and [Jurnell Cockhren](https://github.com/jcockhren)(Back-End)  
+##### Advisors - [Kate Williams](https://github.com/katerebekah), [Zoe Ames](https://github.com/zoeames), [Blaise Gratton](https://github.com/blaisegratton) and [Greg Korte](https://github.com/gregkorte)  
+***
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/creative/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
-* Fork the repo
+PLease don't hesitate to reach out... I love telling my story and talking shop with like-minded thinkers!
 
-## Bugs and Issues
+Best,
+Zach Parris
+zachjparris@gmail.com
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
+***
 
-## Creator
+<div>
+  <h3 align="center">Proud Member:</h3>
+  <a href="https://www.eveningcohort3.com/#/splash"><img align="center" src="img/classphoto.jpg"></a>
+</div>
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+<!--
+/////////////////////////////////  ATTRIBUTION  /////////////////////////////////
 
-## Copyright and License
+Theme used:
+    Start Bootstrap - Creative
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
+Creative is a one page creative theme for Bootstrap created by Start Bootstrap.
+
+Download the latest release on Start Bootstrap
+Clone the repo: git clone https://github.com/BlackrockDigital/startbootstrap-creative.git
+
+Original Creator
+
+Start Bootstrap was created by and is maintained by David Miller, Owner of Blackrock Digital.
+
+https://twitter.com/davidmillerskt
+https://github.com/davidtmiller
+Start Bootstrap is based on the Bootstrap framework created by Mark Otto and Jacob Thorton.
+
+Copyright and License
+
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the MIT license.
+ -->
