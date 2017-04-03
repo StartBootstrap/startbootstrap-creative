@@ -1,27 +1,32 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(document).on('click', 'a.page-scroll', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 48)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+    // Smooth scrolling using jQuery easing
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 48)
+                }, 1000, "easeInOutExpo");
+                return false;
+            }
+        }
     });
 
-    // Highlight the top nav as scrolling occurs
+    // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 54
+        offset: 48
     });
 
-    // Closes the Responsive Menu on Menu Item Click
+    // Closes responsive menu when a link is clicked
     $('.navbar-collapse>ul>li>a').click(function() {
         $('.navbar-collapse').collapse('hide');
     });
 
-    // jQuery to collapse the navbar on scroll
+    // Collapse the navbar when page is scrolled
     $(window).scroll(function() {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
@@ -30,7 +35,7 @@
         }
     });
 
-    // Initialize and Configure Scroll Reveal Animation
+    // Scroll reveal calls
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
         duration: 600,
@@ -47,7 +52,7 @@
         distance: '0px'
     }, 300);
 
-    // Initialize and Configure Magnific Popup Lightbox Plugin
+    // Magnific popup calls
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -56,7 +61,7 @@
         gallery: {
             enabled: true,
             navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            preload: [0, 1]
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'

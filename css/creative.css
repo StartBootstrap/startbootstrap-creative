@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Creative v4.0.0-alpha (http://startbootstrap.com/template-overviews/creative)
+ * Start Bootstrap - Createive v4.0.0-alpha (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 html,
 body {
@@ -53,11 +53,32 @@ p {
 section {
   padding: 100px 0; }
 
-aside {
-  padding: 50px 0; }
+.section-heading {
+  margin-top: 0; }
 
 .no-padding {
   padding: 0; }
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #222222; }
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #222222; }
+
+img::selection {
+  color: white;
+  background: transparent; }
+
+img::-moz-selection {
+  color: white;
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #222222; }
 
 #mainNav {
   background-color: white;
@@ -123,7 +144,7 @@ aside {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #F05F40; } }
 
-header {
+header.masthead {
   position: relative;
   width: 100%;
   min-height: auto;
@@ -135,49 +156,46 @@ header {
   background-image: url("../img/header.jpg");
   text-align: center;
   color: white; }
-  header .header-content {
+  header.masthead .header-content {
     position: relative;
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%; }
-    header .header-content .header-content-inner h1 {
+    header.masthead .header-content .header-content-inner h1 {
       font-weight: 700;
       text-transform: uppercase;
       margin-top: 0;
       margin-bottom: 0;
       font-size: 30px; }
-    header .header-content .header-content-inner hr {
+    header.masthead .header-content .header-content-inner hr {
       margin: 30px auto; }
-    header .header-content .header-content-inner p {
+    header.masthead .header-content .header-content-inner p {
       font-weight: 300;
       color: rgba(255, 255, 255, 0.7);
       font-size: 16px;
       margin-bottom: 50px; }
   @media (min-width: 768px) {
-    header {
+    header.masthead {
       height: 100%;
       min-height: 600px; }
-      header .header-content {
+      header.masthead .header-content {
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         padding: 0 50px; }
-        header .header-content .header-content-inner {
+        header.masthead .header-content .header-content-inner {
           max-width: 1000px;
           margin-left: auto;
           margin-right: auto; }
-          header .header-content .header-content-inner h1 {
+          header.masthead .header-content .header-content-inner h1 {
             font-size: 50px; }
-          header .header-content .header-content-inner p {
+          header.masthead .header-content .header-content-inner p {
             font-size: 18px;
             max-width: 80%;
             margin-left: auto;
             margin-right: auto; } }
-
-.section-heading {
-  margin-top: 0; }
 
 .service-box {
   max-width: 400px;
@@ -232,8 +250,10 @@ header {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 22px; } }
 
-.call-to-action h2 {
-  margin: 0 auto 20px; }
+.call-to-action {
+  padding: 50px 0; }
+  .call-to-action h2 {
+    margin: 0 auto 20px; }
 
 .text-primary {
   color: #F05F40 !important; }
@@ -325,24 +345,3 @@ header {
 
 .btn-xl {
   padding: 15px 30px; }
-
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #222222; }
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: #222222; }
-
-img::selection {
-  color: white;
-  background: transparent; }
-
-img::-moz-selection {
-  color: white;
-  background: transparent; }
-
-body {
-  webkit-tap-highlight-color: #222222; }
