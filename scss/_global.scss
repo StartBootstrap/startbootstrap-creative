@@ -1,8 +1,8 @@
 // Global styling for this template
 html,
 body {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 body {
@@ -10,9 +10,9 @@ body {
 }
 
 hr {
-    border-color: $theme-primary;
-    border-width: 3px;
     max-width: 50px;
+    border-width: 3px;
+    border-color: $theme-primary;
 }
 
 hr.light {
@@ -20,11 +20,11 @@ hr.light {
 }
 
 a {
-    @include transition-all;
     color: $theme-primary;
+    @include transition-all;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 0.1);
+        color: darken($theme-primary, .1);
     }
 }
 
@@ -48,12 +48,12 @@ p {
 }
 
 .bg-dark {
-    background-color: $gray-darker !important;
     color: white;
+    background-color: $gray-darker !important;
 }
 
 .text-faded {
-    color: fade-out(white, 0.3);
+    color: fade-out(white, .3);
 }
 
 section {
@@ -70,14 +70,14 @@ section {
 
 ::-moz-selection {
     color: white;
-    text-shadow: none;
     background: $gray-darker;
+    text-shadow: none;
 }
 
 ::selection {
     color: white;
-    text-shadow: none;
     background: $gray-darker;
+    text-shadow: none;
 }
 
 img::selection {

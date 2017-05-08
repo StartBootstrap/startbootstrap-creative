@@ -31,13 +31,13 @@
         "jquery": "^3.2.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
-        "scrollreveal": "3.3.4",
+        "scrollreveal": "3.3.5",
         "tether": "^1.4.0"
     },
     "devDependencies": {
         "browser-sync": "^2.18.8",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "^3.0.4",
+        "gulp-clean-css": "3.2.0",
         "gulp-header": "1.8.8",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",

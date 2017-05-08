@@ -17,11 +17,11 @@
 }
 
 .btn {
-    @include sans-serif-font;
-    border: none;
-    border-radius: 300px;
     font-weight: 700;
     text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+    @include sans-serif-font;
 }
 
 .btn-xl {

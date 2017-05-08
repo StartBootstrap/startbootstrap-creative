@@ -1,32 +1,32 @@
 // Styling for the navbar
 #mainNav {
+    border-color: fade-out($gray-darker, .95);
     background-color: white;
-    border-color: fade-out($gray-darker, 0.95);
     @include sans-serif-font;
     @include transition-all;
     .navbar-brand {
-        color: $theme-primary;
-        @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
+        color: $theme-primary;
+        @include sans-serif-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 0.1);
+            color: darken($theme-primary, .1);
         }
     }
     .navbar-toggle {
-        font-weight: 700;
         font-size: 12px;
-        color: $gray-darker;
+        font-weight: 700;
         text-transform: uppercase;
+        color: $gray-darker;
     }
     .navbar-nav {
         > li.nav-item {
             > a.nav-link,
             > a.nav-link:focus {
-                text-transform: uppercase;
-                font-weight: 700;
                 font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
                 color: $gray-darker;
                 &:hover {
                     color: $theme-primary;
@@ -42,10 +42,10 @@
         }
     }
     @media (min-width: 992px) {
+        border-color: fade-out(white, .7);
         background-color: transparent;
-        border-color: fade-out(white, 0.7);
         .navbar-brand {
-            color: fade-out(white, 0.3);
+            color: fade-out(white, .3);
             &:hover,
             &:focus {
                 color: white;
@@ -53,20 +53,20 @@
         }
         .navbar-nav > li.nav-item > a.nav-link,
         .navbar-nav > li.nav-item > a.nav-link:focus {
-            color: fade-out(white, 0.3);
+            color: fade-out(white, .3);
             &:hover {
                 color: white;
             }
         }
         &.navbar-shrink {
+            border-color: fade-out($gray-darker, .95);
             background-color: white;
-            border-color: fade-out($gray-darker, 0.95);
             .navbar-brand {
-                color: $theme-primary;
                 font-size: 16px;
+                color: $theme-primary;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 0.1);
+                    color: darken($theme-primary, .1);
                 }
             }
             .navbar-nav > li.nav-item > a.nav-link,
