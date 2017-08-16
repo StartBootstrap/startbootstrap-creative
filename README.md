@@ -9,6 +9,31 @@ To begin using this template, choose one of the following options to get started
 * Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
 * Fork the repo
 
+## Running
+
+#### With docker compose:
+
+`docker-compose up`
+
+#### Docker only:
+
+```sh
+docker build -t startbootstrap-creative .
+docker run -dt \
+   -p 3000:3000 \
+   -p 3001:3001 \
+   -v $(PWD):/app \
+   -w /app \
+   startbootstrap-creative
+```
+           
+#### Stand-alone:
+
+```sh
+npm install
+./node_modules/.bin/gulp dev
+```
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
