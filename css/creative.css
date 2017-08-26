@@ -86,7 +86,6 @@ body {
   transition: all 0.2s; }
   #mainNav .navbar-brand {
     font-weight: 700;
-    text-transform: uppercase;
     color: #F05F40;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -94,13 +93,11 @@ body {
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
     color: #222222; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
     color: #222222; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
