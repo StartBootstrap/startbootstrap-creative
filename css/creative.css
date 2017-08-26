@@ -138,6 +138,9 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #F05F40; } }
 
+iframe {
+  width: 100%; }
+
 header.masthead {
   position: relative;
   width: 100%;
