@@ -2,19 +2,7 @@
 
 _This is a fork from [Start Bootstrap Creative Theme](https://startbootstrap.com/template-overviews/creative/)_
 
-## Preview
-
-[![Creative Preview](https://startbootstrap.com/assets/img/templates/creative.jpg)](https://blackrockdigital.github.io/startbootstrap-creative/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* Clone the repo: `git@github.com:rocketrocket/wedding-website.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/rocketrocket/wedding-website)
-
-## Usage
+**[View Live Preview](https://rocketrocket.github.io/wedding-website/)**
 
 ### Basic Usage
 
