@@ -6,7 +6,7 @@
   @include transition-all;
   .navbar-brand {
     font-weight: 700;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $theme-primary;
     @include sans-serif-font;
     &:focus,
@@ -17,16 +17,16 @@
   .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $gray-darker;
   }
   .navbar-nav {
     > li.nav-item {
        > a.nav-link:focus,
       > a.nav-link {
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 700;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: $gray-darker;
         &:hover {
           color: $theme-primary;
