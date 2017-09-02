@@ -28,7 +28,8 @@ header.masthead {
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 50px;
-        color: fade-out(white, .3);
+        color: white;
+        text-shadow: -1px 1px #222;
       }
     }
   }
