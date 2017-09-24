@@ -27,6 +27,20 @@
             top: 100
         }
     })
+    $('a.read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
+        event.preventDefault(); 
+        $(this).hide();/* prevent the a from changing the url */
+        $(this).parents('.service-box').find('.more_text').show(); /* show the .more_text span */
+         $(this).parents('.service-box').find('a.read_less').show();
+    });
+    $('a.read_less').click(function(event){ /* find all a.read_more elements and bind the following code to them */
+        event.preventDefault(); 
+        $(this).hide();/* prevent the a from changing the url */
+        $(this).parents('.service-box').find('.more_text').hide(); /* show the .more_text span */
+        $(this).parents('.service-box').find('a.read_more').show();
+    });
+
+
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
