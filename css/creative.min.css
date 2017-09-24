@@ -6,16 +6,22 @@
  .logo-container {
   border: 5px transparent #05724f;
   color: #05724f;	
-  width: 500px;
-  height: 100%;
-  border-radius: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  /*border-radius: 50%;*/
   padding: 20px;
-  margin: 0 auto;
-  text-align: center;
+  margin:auto;
+  /*text-align: center;*/
 }
 
 .logo {
   filter:invert(100%);
   width:100%;
   height:100%;
+/*background: url('img/logo.png');
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
 }
