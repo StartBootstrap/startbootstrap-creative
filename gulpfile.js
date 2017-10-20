@@ -80,9 +80,6 @@ gulp.task('copy', function() {
   gulp.src(['node_modules/scrollreveal/dist/*.js'])
     .pipe(gulp.dest('vendor/scrollreveal'))
 
-  gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
-    .pipe(gulp.dest('vendor/popper'))
-
   gulp.src(['node_modules/jquery.easing/*.js'])
     .pipe(gulp.dest('vendor/jquery-easing'))
 
