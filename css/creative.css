@@ -148,7 +148,7 @@ header.masthead {
   text-align: center;
   color: white;
   background-image: url("../img/header.jpg");
-  background-position: center;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
