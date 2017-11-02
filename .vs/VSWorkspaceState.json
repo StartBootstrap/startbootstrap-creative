@@ -3,10 +3,10 @@
     "",
     "\\css",
     "\\img",
-    "\\scss",
-    "\\vendor",
+    "\\img\\portfolio",
+    "\\img\\portfolio\\fullsize",
+    "\\img\\portfolio\\thumbnails",
     "\\vendor\\bootstrap"
   ],
-  "SelectedNode": "\\css\\creative.css",
   "PreviewInSolutionExplorer": false
 }

@@ -25,7 +25,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #FFE9E8; }
+    color: #ffe9e7; }
 
 h1,
 h2,
@@ -90,7 +90,7 @@ body {
     color: #FFE9E8;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #FFE9E8; }
+      color: #ffe9e7; }
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
@@ -133,7 +133,7 @@ body {
           font-size: 16px;
           color: #FFE9E8; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #FFE9E8; }
+            color: #ffe9e7; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: #222222; }
@@ -217,7 +217,7 @@ header.masthead {
     text-align: center;
     opacity: 0;
     color: white;
-    background: rgba(240, 95, 64, 0.9);
+    background: rgba(255, 233, 232, 0.9);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
@@ -302,24 +302,24 @@ header.masthead {
   background-color: #FFE9E8; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
-    border-color: #a4270d;
-    background-color: #eb3812; }
+    border-color: #ff6f69;
+    background-color: #ffb8b5; }
   .btn-primary:hover {
     color: white;
-    border-color: #e13612;
-    background-color: #eb3812; }
+    border-color: #ffaeab;
+    background-color: #ffb8b5; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #e13612;
-    background-color: #eb3812; }
+    border-color: #ffaeab;
+    background-color: #ffb8b5; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
       color: white;
-      border-color: #a4270d;
-      background-color: #c93110; }
+      border-color: #ff6f69;
+      background-color: #ff9691; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
