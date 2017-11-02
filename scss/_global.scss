@@ -12,19 +12,18 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: $theme-primary;
+  border-color: $primary;
 }
 
 hr.light {
-  border-color: white;
+  border-color: $white;
 }
 
 a {
-  color: $theme-primary;
+  color: $primary;
   @include transition-all;
-  &:focus,
   &:hover {
-    color: darken($theme-primary, .1);
+    color: darken($primary, .1);
   }
 }
 
@@ -37,27 +36,20 @@ h6 {
   @include sans-serif-font;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
 .bg-primary {
-  background-color: $theme-primary !important;
+  background-color: $primary !important;
 }
 
 .bg-dark {
-  color: white;
-  background-color: $gray-darker !important;
+  background-color: $gray-900 !important;
 }
 
 .text-faded {
-  color: fade-out(white, .3);
+  color: fade-out($white, .3);
 }
 
 section {
-  padding: 100px 0;
+  padding: 8rem 0;
 }
 
 .section-heading {
@@ -65,27 +57,27 @@ section {
 }
 
 ::-moz-selection {
-  color: white;
-  background: $gray-darker;
+  color: $white;
+  background: $gray-900;
   text-shadow: none;
 }
 
 ::selection {
-  color: white;
-  background: $gray-darker;
+  color: $white;
+  background: $gray-900;
   text-shadow: none;
 }
 
 img::selection {
-  color: white;
+  color: $white;
   background: transparent;
 }
 
 img::-moz-selection {
-  color: white;
+  color: $white;
   background: transparent;
 }
 
 body {
-  -webkit-tap-highlight-color: $gray-darker;
+  -webkit-tap-highlight-color: $gray-900;
 }

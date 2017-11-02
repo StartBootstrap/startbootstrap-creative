@@ -1,61 +1,37 @@
 // Styling for the masthead
 header.masthead {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  text-align: center;
-  color: white;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
   background-image: url('../img/header.jpg');
-  background-position: center;
+  background-position: center center;
   @include background-cover;
-  .header-content {
-    position: relative;
-    width: 100%;
-    padding: 150px 15px 100px;
-    text-align: center;
-    .header-content-inner {
-      h1 {
-        font-size: 30px;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-transform: uppercase;
-      }
-      hr {
-        margin: 30px auto;
-      }
-      p {
-        font-size: 16px;
-        font-weight: 300;
-        margin-bottom: 50px;
-        color: fade-out(white, .3);
-      }
-    }
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-weight: 300;
   }
   @media (min-width: 768px) {
-    height: 100%;
-    min-height: 600px;
-    .header-content {
-      position: absolute;
-      top: 50%;
-      padding: 0 50px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      .header-content-inner {
-        max-width: 1000px;
-        margin-right: auto;
-        margin-left: auto;
-        h1 {
-          font-size: 50px;
-        }
-        p {
-          font-size: 18px;
-          max-width: 80%;
-          margin-right: auto;
-          margin-left: auto;
-        }
-      }
+    p {
+      font-size: 1.15rem;
+    }
+  }
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
     }
   }
 }
