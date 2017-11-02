@@ -12,8 +12,8 @@
     height: 100%;
     text-align: center;
     opacity: 0;
-    color: white;
-    background: fade-out($theme-primary, .1);
+    color: $white;
+    background: fade-out($primary, .1);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
