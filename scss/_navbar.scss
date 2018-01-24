@@ -39,7 +39,7 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      color: $primary;
       &:focus,
       &:hover {
         color: $white;
