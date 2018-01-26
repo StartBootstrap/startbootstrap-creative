@@ -1,7 +1,5 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
   background-image: url('../img/header.jpg');
   background-position: center center;
   @include background-cover;
@@ -21,7 +19,6 @@ header.masthead {
     }
   }
   @media (min-width: 992px) {
-    height: 100vh;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;

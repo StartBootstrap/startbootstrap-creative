@@ -80,14 +80,26 @@ img::-moz-selection {
 
 .overlay {
   width: 100%;
-  height: 100vh;
-  padding: 10vh 0;
+  height: auto;
+  padding: 120px 0 90px 0;
   background: rgba(0,0,0,0.35);
+  @media (min-width: 992px){
+    padding: 120px 0 180px 0;
+  }
 }
 
 .introduction {
   p {
     text-shadow:1px 1px #000;
     margin-bottom: 1rem;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+#contact {
+  img {
+    margin: 0 auto;
   }
 }

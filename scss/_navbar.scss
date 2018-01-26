@@ -7,8 +7,7 @@
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
-    text-shadow:1px 1px #000;
+    color: black;
     margin-bottom: 1rem;
     @include sans-serif-font;
     &:focus,
@@ -41,6 +40,8 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
+      color:#fff;
+      text-shadow:1px 1px #000;
       &:focus,
       &:hover {
         color: darken(white, 10%);

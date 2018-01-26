@@ -82,14 +82,28 @@ img::-moz-selection {
 
 .overlay {
   width: 100%;
-  height: 100vh;
-  padding: 10vh 0;
+  height: auto;
+  padding: 120px 0 90px 0;
   background: rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 992px) {
+  .overlay {
+    padding: 120px 0 180px 0;
+  }
 }
 
 .introduction p {
   text-shadow: 1px 1px #000;
   margin-bottom: 1rem;
+}
+
+.introduction .btn {
+  margin-top: 2rem;
+}
+
+#contact img {
+  margin: 0 auto;
 }
 
 #mainNav {
@@ -104,8 +118,7 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
-  text-shadow: 1px 1px #000;
+  color: black;
   margin-bottom: 1rem;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -142,6 +155,10 @@ img::-moz-selection {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: #fff;
+    text-shadow: 1px 1px #000;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #e6e6e6;
@@ -182,8 +199,6 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
   -webkit-background-size: cover;
@@ -213,7 +228,6 @@ header.masthead p {
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
