@@ -7,7 +7,9 @@
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: $primary;
+    color: white;
+    text-shadow:1px 1px #000;
+    margin-bottom: 1rem;
     @include sans-serif-font;
     &:focus,
     &:hover {
@@ -39,10 +41,9 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: $primary;
       &:focus,
       &:hover {
-        color: $white;
+        color: darken(white, 10%);
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -50,9 +51,11 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      color: white;
+      text-shadow:1px 1px #000;
+      margin-bottom: 1rem;
       &:hover {
-        color: $white;
+        color: darken(white, 10%);
       }
     }
     &.navbar-shrink {
@@ -60,16 +63,18 @@
       background-color: $white;
       .navbar-brand {
         color: $primary;
+        text-shadow: none;
         &:focus,
         &:hover {
-          color: darken($primary, .1);
+          color: darken($primary, 15%);
         }
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: $gray-900;
+        color: $primary;
+        text-shadow: none;
         &:hover {
-          color: $primary;
+          color: darken($primary, 15%);
         }
       }
     }
