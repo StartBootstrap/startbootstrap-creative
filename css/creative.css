@@ -119,7 +119,8 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: black;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -170,7 +171,8 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     color: white;
     text-shadow: 1px 1px #000;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {

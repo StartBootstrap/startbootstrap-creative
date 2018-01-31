@@ -8,7 +8,8 @@
     font-weight: 700;
     text-transform: uppercase;
     color: black;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     @include sans-serif-font;
     &:focus,
     &:hover {
@@ -54,7 +55,8 @@
     .navbar-nav > li.nav-item > a.nav-link:focus {
       color: white;
       text-shadow:1px 1px #000;
-      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
       &:hover {
         color: darken(white, 10%);
       }
