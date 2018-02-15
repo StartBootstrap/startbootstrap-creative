@@ -81,25 +81,31 @@ img::-moz-selection {
 .overlay {
   width: 100%;
   height: auto;
-  padding: 120px 0 90px 0;
+  padding-top: 120px;
+
   background: rgba(0,0,0,0.35);
   @media (min-width: 992px){
     padding: 120px 0 180px 0;
   }
+
+  @media (min-width: 576px) {
+    padding: 120px 0 90px 0;  }
 }
 
 .introduction {
 
   padding: 3rem 1rem;
 
+  @media (min-width: 576px) {
+    border-radius: 1rem;
+  }
+
   @media (min-width: 992px){
     padding: 4rem;
   }
 
   color: $gray-900;
-  box-shadow: 0 0 1rem rgba(255,255,255,.8);
   background-color: rgba(255,255,255,.6);
-  border-radius: 1rem;
 
   p {
     margin-bottom: 1rem;

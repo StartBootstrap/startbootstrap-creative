@@ -83,7 +83,7 @@ img::-moz-selection {
 .overlay {
   width: 100%;
   height: auto;
-  padding: 120px 0 90px 0;
+  padding-top: 120px;
   background: rgba(0, 0, 0, 0.35);
 }
 
@@ -93,12 +93,22 @@ img::-moz-selection {
   }
 }
 
+@media (min-width: 576px) {
+  .overlay {
+    padding: 120px 0 90px 0;
+  }
+}
+
 .introduction {
   padding: 3rem 1rem;
   color: #212529;
-  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 1rem;
+}
+
+@media (min-width: 576px) {
+  .introduction {
+    border-radius: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
