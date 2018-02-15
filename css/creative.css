@@ -11,7 +11,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: #a4243b;
 }
 
 hr.light {
@@ -19,14 +19,14 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: #a4243b;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #a4243b;
 }
 
 h1,
@@ -39,7 +39,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #a4243b !important;
 }
 
 .bg-dark {
@@ -93,8 +93,21 @@ img::-moz-selection {
   }
 }
 
+.introduction {
+  padding: 3rem 1rem;
+  color: #212529;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+}
+
+@media (min-width: 992px) {
+  .introduction {
+    padding: 4rem;
+  }
+}
+
 .introduction p {
-  text-shadow: 1px 1px #000;
   margin-bottom: 1rem;
 }
 
@@ -125,7 +138,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: #a4243b;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -138,12 +151,12 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
+  color: #a4243b;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  color: #a4243b !important;
   background-color: transparent;
 }
 
@@ -154,49 +167,25 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    border-color: transparent;
-    background-color: transparent;
-  }
-  #mainNav .navbar-brand {
-    color: #fff;
-    text-shadow: 1px 1px #000;
-  }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #e6e6e6;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 0.5rem 1rem;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: white;
-    text-shadow: 1px 1px #000;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #e6e6e6;
-  }
-  #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
   }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+  #mainNav .navbar-brand {
+    color: #a4243b;
     text-shadow: none;
   }
-  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #d33311;
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #651624;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #F05F40;
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    padding: 0.5rem 1rem;
+    color: #a4243b;
     text-shadow: none;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #d33311;
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #651624;
   }
 }
 
@@ -265,7 +254,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(164, 36, 59, 0.9);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -313,7 +302,7 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  color: #a4243b !important;
 }
 
 .btn {
@@ -329,15 +318,33 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #a4243b;
+  border-color: #a4243b;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #8f1f33 !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+main p a,
+#main p a {
+  border-bottom: 1px solid #a4243b;
+}
+
+main p a:hover, main p a:focus,
+#main p a:hover,
+#main p a:focus {
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+main .bg-dark p a,
+#main .bg-dark p a {
+  color: #A69300;
+  border-bottom: 1px solid #A69300;
 }

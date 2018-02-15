@@ -38,30 +38,6 @@
     }
   }
   @media (min-width: 992px) {
-    border-color: transparent;
-    background-color: transparent;
-    .navbar-brand {
-      color:#fff;
-      text-shadow:1px 1px #000;
-      &:focus,
-      &:hover {
-        color: darken(white, 10%);
-      }
-    }
-    .navbar-nav > li.nav-item > a.nav-link {
-      padding: 0.5rem 1rem;
-    }
-    .navbar-nav > li.nav-item > a.nav-link,
-    .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: white;
-      text-shadow:1px 1px #000;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      &:hover {
-        color: darken(white, 10%);
-      }
-    }
-    &.navbar-shrink {
       border-bottom: 1px solid fade-out($gray-900, .9);
       background-color: $white;
       .navbar-brand {
@@ -74,6 +50,7 @@
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
+        padding: 0.5rem 1rem;
         color: $primary;
         text-shadow: none;
         &:hover {
@@ -81,5 +58,5 @@
         }
       }
     }
-  }
+
 }

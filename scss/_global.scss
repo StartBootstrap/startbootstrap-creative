@@ -89,8 +89,19 @@ img::-moz-selection {
 }
 
 .introduction {
+
+  padding: 3rem 1rem;
+
+  @media (min-width: 992px){
+    padding: 4rem;
+  }
+
+  color: $gray-900;
+  box-shadow: 0 0 1rem rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,.6);
+  border-radius: 1rem;
+
   p {
-    text-shadow:1px 1px #000;
     margin-bottom: 1rem;
   }
   .btn {

@@ -1,0 +1,19 @@
+main,
+#main {
+  p a {
+    border-bottom: 1px solid $primary;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border-bottom: 0;
+    }
+  }
+
+  .bg-dark {
+    p a {
+      color: $secondary;
+      border-bottom: 1px solid $secondary;
+    }
+  }
+}
