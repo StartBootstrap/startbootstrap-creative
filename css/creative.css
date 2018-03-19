@@ -175,6 +175,44 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+#mainNav .navbar-nav > li.nav-item.nav-item-social {
+  display: flex;
+  align-items: center;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link-social {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: .5rem .5rem .5rem 0;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link-social span {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link-social.nav-link-social--facebook {
+  background: url("../img/social/facebook.svg") center center/cover no-repeat;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link-social.nav-link-social--twitter {
+  background: url("../img/social/twitter.svg") center center/cover no-repeat;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link-social.nav-link-social--revue {
+  background: url("../img/social/revue.svg") center center/cover no-repeat;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link-social.nav-link-social--instagram {
+  background: url("../img/social/instagram.svg") center center/cover no-repeat;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -196,6 +234,11 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #651624;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link-social,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link-social:focus {
+    margin: 0 0 0 .5rem;
+    padding: 0;
   }
 }
 

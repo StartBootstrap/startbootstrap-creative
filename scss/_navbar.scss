@@ -18,7 +18,7 @@
   }
   .navbar-nav {
     > li.nav-item {
-       > a.nav-link,
+      > a.nav-link,
       > a.nav-link:focus {
         font-size: .9rem;
         font-weight: 700;
@@ -33,6 +33,44 @@
           &:hover {
             background-color: transparent;
           }
+        }
+      }
+
+      &.nav-item-social {
+        display: flex;
+        align-items: center
+      }
+
+      > a.nav-link-social {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: .5rem .5rem .5rem 0;
+
+        span {
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+
+        &.nav-link-social--facebook {
+          background: url('../img/social/facebook.svg') center center/ cover no-repeat;
+        }
+
+        &.nav-link-social--twitter {
+          background: url('../img/social/twitter.svg') center center/ cover no-repeat;
+        }
+
+        &.nav-link-social--revue {
+          background: url('../img/social/revue.svg') center center/ cover no-repeat;
+        }
+
+        &.nav-link-social--instagram {
+          background: url('../img/social/instagram.svg') center center/ cover no-repeat;
         }
       }
     }
@@ -56,6 +94,12 @@
         &:hover {
           color: darken($primary, 15%);
         }
+      }
+
+      .navbar-nav > li.nav-item > a.nav-link-social,
+      .navbar-nav > li.nav-item > a.nav-link-social:focus {
+        margin: 0 0 0 .5rem;
+        padding: 0;
       }
     }
 
