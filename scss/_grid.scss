@@ -1,0 +1,362 @@
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome/fontawesome.eot?-v92fkb');
+	src:url('../fonts/fontawesome/fontawesome.eot?#iefix-v92fkb') format('embedded-opentype'),
+		url('../fonts/fontawesome/fontawesome.woff?-v92fkb') format('woff'),
+		url('../fonts/fontawesome/fontawesome.ttf?-v92fkb') format('truetype'),
+		url('../fonts/fontawesome/fontawesome.svg?-v92fkb#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+.grid-wrap {
+	margin: 0 auto;
+	width: 100%;
+	-webkit-perspective: 5000px;
+	perspective: 5000px;
+}
+
+.image-grid {
+	position: relative;
+  display: flex;
+  flex-wrap: wrap;
+	-webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
+	transition: all 0.5s cubic-bezier(0,0,0.25,1);
+	-webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.view-full .image-grid {
+	-webkit-transform: translateZ(-1500px);
+	transform: translateZ(-1500px);
+}
+@media (min-width: 576px) {
+  .image-grid figure,
+  .image-grid .placeholder {
+    width: calc((100% - 1rem) / 2);
+  }
+}
+
+.image-grid figure {
+  position: relative;
+  margin-bottom: 1rem;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+  user-select: none;
+
+  @media (min-width: 576px) {
+    margin-right: 1rem;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFF;
+  }
+}
+
+.image-grid figure.active {
+  opacity: 0;
+}
+
+.image-grid .placeholder {
+	pointer-events: none;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.image-grid .placeholder .front {
+  figcaption {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.placeholder > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.placeholder .front img {
+	width: 100%;
+	height: 100%;
+}
+
+.placeholder .back {
+	background: white;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.view-full .placeholder {
+	-webkit-transition: all 0.5s 0.1s cubic-bezier(0,0,0.25,1);
+	transition: all 0.5s 0.1s cubic-bezier(0,0,0.25,1);
+}
+
+.vertical .view-full .placeholder {
+	-webkit-transform: translateZ(1500px) rotateX(-179.9deg);
+	transform: translateZ(1500px) rotateX(-179.9deg); /* FF, Chrome, can we agree on one direction, pleeease? */
+}
+
+.horizontal .view-full .placeholder {
+	-webkit-transform: translateZ(1500px) rotateY(-179.9deg);
+	transform: translateZ(1500px) rotateY(-179.9deg);
+}
+
+.image-grid figure img {
+	display: block;
+	width: 100%;
+}
+
+.content,
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none; /* Careful, does not work in IE < 11 http://caniuse.com/#search=pointer-events */
+}
+
+.content {
+	overflow-y: scroll;
+	height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
+	background: #fff;
+	visibility: hidden;
+  z-index: 9999;
+	-webkit-overflow-scrolling: touch;
+}
+
+.loading {
+	opacity: 0;
+	z-index: 1;
+	background: transparent url(../img/preloader.gif) no-repeat center center;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.loading.show {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.content.show {
+	height: auto;
+	pointer-events: auto;
+  visibility: visible;
+}
+
+.content > div {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	background: #fff;
+}
+
+.content > div.show {
+	height: auto;
+	opacity: 1;
+	-webkit-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+}
+
+.icon:before {
+	font-family: 'fontawesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.close-content {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 10px;
+	font-size: 1.6em;
+	color: #aaa;
+	cursor: pointer;
+	pointer-events: none;
+	padding: 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.close-content:hover {
+	color: #999;
+}
+
+.content > div.show ~ .close-content {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.close-content:before {
+	content: "\e602";
+}
+
+/* Dummy content */
+
+.dummy-img,
+.dummy-text {
+	max-width: 600px;
+	width: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.vertical .dummy-img,
+.vertical .dummy-text {
+	-webkit-transform: translateY(100px);
+	transform: translateY(100px);
+}
+
+.horizontal .dummy-img,
+.horizontal .dummy-text {
+	-webkit-transform: translateX(-100px);
+	transform: translateX(-100px);
+}
+
+.content > div.show .dummy-img,
+.content > div.show .dummy-text {
+	opacity: 1;
+}
+
+.vertical .content > div.show .dummy-img,
+.vertical .content > div.show .dummy-text {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.horizontal .content > div.show .dummy-img,
+.horizontal .content > div.show .dummy-text {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+p.dummy-text:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+p.dummy-text:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.dummy-img {
+	height: 400px;
+	background-color: #ddd;
+	margin: 30px auto;
+}
+
+.dummy-text {
+	text-align: left;
+	margin: 0 auto;
+	padding: 10px 0;
+	color: #ddd;
+	font-size: 1rem;
+}
+
+.dummy-text:last-child {
+	padding-bottom: 100px;
+}
+
+/* Simple fallback */
+/* if any of these are not supported, a simple fallback will be shown */
+.no-pointerevents .content,
+.no-csstransforms3d .content,
+.no-csstransitions .content,
+.no-pointerevents .content > div,
+.no-csstransforms3d .content > div,
+.no-csstransitions .content > div,
+.no-pointerevents .close-content,
+.no-csstransforms3d .close-content,
+.no-csstransitions .close-content {
+	opacity: 1;
+	visibility: visible;
+	display: none;
+	height: auto;
+}
+
+.no-pointerevents .show .close-content,
+.no-csstransforms3d .show .close-content,
+.no-csstransition .show .close-content,
+.no-pointerevents div.show,
+.no-csstransforms3d div.show,
+.no-csstransitions div.show,
+.no-csstransitions .dummy-img,
+.no-csstransitions .dummy-text,
+.no-csstransforms3d .dummy-img,
+.no-csstransforms3d .dummy-text,
+.no-pointerevents .dummy-img,
+.no-pointerevents .dummy-text {
+	display: block !important;
+	opacity: 1;
+}
