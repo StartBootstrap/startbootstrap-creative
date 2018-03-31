@@ -6,10 +6,18 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
-        }, 1000, "easeInOutExpo");
+        if (target.length) {
+        // Fix for Firefox Browser
+        if(target.offset() == undefined){
+          var ypos = target.pageY-$('#canvas').offset().top;
+          $('html, body').animate({
+            scrollTop: (ypos - 57)
+          }, 1000, "easeInOutExpo");
+        }else{
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 57)
+          }, 1000, "easeInOutExpo");
+        }
         return false;
       }
     }
@@ -28,10 +36,21 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
+    // Fix for Firefox Browser
+    if($("#mainNav").offset() == undefined){
+      var ypos = $("#mainNav").pageY-$('#canvas').offset().top;
+      if (ypos > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
+    }
+    else{
+      if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
     }
   };
   // Collapse now if page is not at top
