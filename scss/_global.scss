@@ -87,7 +87,7 @@ img::-moz-selection {
   height: auto;
   padding-top: 120px;
 
-  background: rgba(0,0,0,0.35);
+  background: rgba(171, 105, 18, 0.3);
   @media (min-width: 992px){
     padding: 120px 0 180px 0;
   }
@@ -99,10 +99,6 @@ img::-moz-selection {
 .introduction {
 
   padding: 3rem 1rem;
-
-  @media (min-width: 576px) {
-    border-radius: 1rem;
-  }
 
   @media (min-width: 992px){
     padding: 4rem;

@@ -90,7 +90,7 @@ img::-moz-selection {
   width: 100%;
   height: auto;
   padding-top: 120px;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(171, 105, 18, 0.3);
 }
 
 @media (min-width: 992px) {
@@ -109,12 +109,6 @@ img::-moz-selection {
   padding: 3rem 1rem;
   color: #212529;
   background-color: rgba(255, 255, 255, 0.6);
-}
-
-@media (min-width: 576px) {
-  .introduction {
-    border-radius: 1rem;
-  }
 }
 
 @media (min-width: 992px) {
@@ -174,6 +168,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
   color: #a4243b !important;
   background-color: transparent;
+  border-bottom: 2px solid #a4243b;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
@@ -368,7 +363,6 @@ header.masthead p {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 300px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -445,13 +439,13 @@ main .bg-dark p a,
 @media (min-width: 576px) {
   .image-grid figure,
   .image-grid .placeholder {
-    width: calc((100% - 1rem) / 2);
+    width: calc((100% - 4rem) / 3);
   }
 }
 
 .image-grid figure {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -459,16 +453,21 @@ main .bg-dark p a,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition: transform .2s ease-in;
+}
+
+.image-grid figure:hover, .image-grid figure:focus {
+  transform: scale(1.08);
 }
 
 @media (min-width: 576px) {
   .image-grid figure {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
-  .image-grid figure:nth-child(even) {
+  .image-grid figure:nth-child(3n+3) {
     margin-right: 0;
   }
-  .image-grid figure:nth-last-child(2) {
+  .image-grid figure:nth-last-child(-n+3) {
     margin-bottom: 0;
   }
 }
@@ -477,18 +476,7 @@ main .bg-dark p a,
   margin-bottom: 0;
 }
 
-.image-grid figure:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .image-grid figure figcaption {
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -496,7 +484,8 @@ main .bg-dark p a,
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
-  color: #FFF;
+  color: #a4243b;
+  background-color: #fff;
 }
 
 .image-grid figure.active {

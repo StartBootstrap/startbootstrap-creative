@@ -30,6 +30,7 @@
         &.active {
           color: $primary !important;
           background-color: transparent;
+          border-bottom: 2px solid $primary;
           &:hover {
             background-color: transparent;
           }
