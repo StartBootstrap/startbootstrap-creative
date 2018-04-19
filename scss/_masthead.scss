@@ -31,4 +31,12 @@ header.masthead {
       font-size: 4rem;
     }
   }
+
+  &_cow {
+    background-image: url('../img/header_cow.jpg');
+  }
+
+  &_pergola {
+    background-image: url('../img/header_pergola.jpg');
+  }
 }

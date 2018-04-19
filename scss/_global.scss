@@ -87,13 +87,24 @@ img::-moz-selection {
   height: auto;
   padding-top: 120px;
 
-  background: rgba(171, 105, 18, 0.3);
+  h1 {
+    text-shadow: 1px 1px 5px rgba(0,0,0,.2)
+  }
+
   @media (min-width: 992px){
     padding: 120px 0 180px 0;
   }
 
   @media (min-width: 576px) {
     padding: 120px 0 90px 0;  }
+
+  &_yellow {
+    background: rgba(171, 105, 18, 0.3);
+  }
+
+  &_dark {
+    background: rgba(122, 135, 163, 0.3);
+  }
 }
 
 .introduction {

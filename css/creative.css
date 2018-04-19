@@ -90,7 +90,10 @@ img::-moz-selection {
   width: 100%;
   height: auto;
   padding-top: 120px;
-  background: rgba(171, 105, 18, 0.3);
+}
+
+.overlay h1 {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 992px) {
@@ -103,6 +106,14 @@ img::-moz-selection {
   .overlay {
     padding: 120px 0 90px 0;
   }
+}
+
+.overlay_yellow {
+  background: rgba(171, 105, 18, 0.3);
+}
+
+.overlay_dark {
+  background: rgba(122, 135, 163, 0.3);
 }
 
 .introduction {
@@ -288,6 +299,14 @@ header.masthead p {
   }
 }
 
+header.masthead_cow {
+  background-image: url("../img/header_cow.jpg");
+}
+
+header.masthead_pergola {
+  background-image: url("../img/header_pergola.jpg");
+}
+
 .service-box {
   max-width: 400px;
 }
@@ -400,6 +419,25 @@ main .bg-dark p a,
 #main .bg-dark p a {
   color: #A69300;
   border-bottom: 1px solid #A69300;
+}
+
+a.header_more-link {
+  display: inline-block;
+  color: #212529;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  padding-top: .2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all .2s ease-in;
+  background: #fff;
+  opacity: 1;
+}
+
+a.header_more-link:hover, a.header_more-link:focus {
+  text-decoration: none;
+  transform: scale(1.08);
 }
 
 @font-face {
@@ -716,7 +754,7 @@ p.dummy-text:nth-child(3) {
   text-align: left;
   margin: 0 auto;
   padding: 10px 0;
-  color: #ddd;
+  color: #000;
   font-size: 1rem;
 }
 

@@ -17,3 +17,23 @@ main,
     }
   }
 }
+
+a.header_more-link {
+  display: inline-block;
+  color: #212529;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  padding-top: .2rem;
+  border: 2px solid $white;
+  border-radius: 50%;
+  transition: all .2s ease-in;
+  background: $white;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    transform: scale(1.08);
+  }
+}
