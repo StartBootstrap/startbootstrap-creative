@@ -476,12 +476,16 @@ a.header_more-link:hover, a.header_more-link:focus {
 
 @media (min-width: 576px) {
   .image-grid figure,
-  .image-grid .placeholder {
+  .image-grid .placeholder,
+  .image-grid > div {
     width: calc((100% - 4rem) / 3);
   }
 }
 
-.image-grid figure {
+.image-grid figure,
+.image-grid > div {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 2rem;
   cursor: pointer;
@@ -494,36 +498,58 @@ a.header_more-link:hover, a.header_more-link:focus {
   transition: transform .2s ease-in;
 }
 
-.image-grid figure:hover, .image-grid figure:focus {
+.image-grid figure .img,
+.image-grid > div .img {
+  min-height: 270px;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-grid figure:hover, .image-grid figure:focus,
+.image-grid > div:hover,
+.image-grid > div:focus {
   transform: scale(1.08);
 }
 
 @media (min-width: 576px) {
-  .image-grid figure {
+  .image-grid figure,
+  .image-grid > div {
     margin-right: 2rem;
   }
-  .image-grid figure:nth-child(3n+3) {
+  .image-grid figure:nth-child(3n+3),
+  .image-grid > div:nth-child(3n+3) {
     margin-right: 0;
   }
-  .image-grid figure:nth-last-child(-n+3) {
+  .image-grid figure:nth-last-child(-n+3),
+  .image-grid > div:nth-last-child(-n+3) {
     margin-bottom: 0;
   }
 }
 
-.image-grid figure:last-child {
+.image-grid figure:last-child,
+.image-grid > div:last-child {
   margin-bottom: 0;
 }
 
-.image-grid figure figcaption {
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.image-grid figure figcaption,
+.image-grid figure .caption,
+.image-grid > div figcaption,
+.image-grid > div .caption {
+  flex: 1;
   padding: 1rem;
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #a4243b;
   background-color: #fff;
+}
+
+.image-grid figure figcaption span,
+.image-grid figure .caption span,
+.image-grid > div figcaption span,
+.image-grid > div .caption span {
+  display: block;
+  font-size: .8rem;
 }
 
 .image-grid figure.active {
@@ -745,9 +771,11 @@ p.dummy-text:nth-child(3) {
 }
 
 .dummy-img {
-  height: 400px;
-  background-color: #ddd;
   margin: 30px auto;
+}
+
+.dummy-img img {
+  width: 100%;
 }
 
 .dummy-text {
