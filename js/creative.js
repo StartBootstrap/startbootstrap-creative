@@ -73,33 +73,6 @@
 			},
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     },
-    // iframe: {
-    //   markup: '<div class="mfp-iframe-scaler">'+
-    //             '<div class="mfp-close"></div>'+
-    //             '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-    //           '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
-    
-    //   patterns: {
-    //     youtube: {
-    //       index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
-    //       src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
-    //     },
-    //     vimeo: {
-    //       index: 'vimeo.com/',
-    //       id: '/',
-    //       src: '//player.vimeo.com/video/%id%?autoplay=1'
-    //     },
-    //     gmaps: {
-    //       index: '//maps.google.',
-    //       src: '%id%&output=embed'
-    //     }
-    
-    //     // you may add here more sources
-    
-    //   },
-    
-    //   srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-    // }
   });
 
   $('.video').magnificPopup({
@@ -123,3 +96,29 @@
   });
 
 })(jQuery); // End of use strict
+
+// const sections = Array.from(document.querySelectorAll("section"));
+// const scrollActions = () => {
+
+//   const rects = sections.map(section => section.getBoundingClientRect());
+//   for (let i = 0; i < sections.length; i++) {
+//     const section = sections[i];
+//     const rect = rects[i];
+//     // console.log(section.classList)
+//     if (rect.top < window.innerHeight - SECTION_MARGIN && rect.bottom > 0) {
+//       section.classList.add("active");
+//     } else {
+//       section.classList.remove("active");
+//     }
+//   }
+
+//   ticking = false;
+// };
+
+// window.addEventListener("scroll", () => {
+//   if (!ticking) {
+//     window.requestAnimationFrame(scrollActions);
+//     ticking = true;
+//   }
+// });
+// scrollActions();

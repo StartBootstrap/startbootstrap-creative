@@ -285,7 +285,7 @@ img.mfp-img {
   cursor: auto; }
 
 .mfp-title {
-  text-align: center;
+  text-align: left;
   line-height: 18px;
   color: #F3F3F3;
   word-wrap: break-word;
