@@ -73,7 +73,7 @@ gulp.task('css:compile', function() {
     .pipe(gulp.dest('./css'))
 });
 
-// Minify CSS
+// // Minify CSS
 gulp.task('css:minify', ['css:compile'], function() {
   return gulp.src([
       './css/*.css',
@@ -87,7 +87,7 @@ gulp.task('css:minify', ['css:compile'], function() {
     .pipe(browserSync.stream());
 });
 
-// CSS
+// // CSS
 gulp.task('css', ['css:compile', 'css:minify']);
 
 // Minify JavaScript
