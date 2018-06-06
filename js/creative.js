@@ -23,9 +23,10 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 58
   });
 
+  // console.log(body)
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
@@ -44,7 +45,7 @@
   sr.reveal('.sr-icons', {
     duration: 600,
     scale: 0.3,
-    distance: '0px'
+    distance: '-100px'
   }, 200);
   sr.reveal('.sr-button', {
     duration: 1000,

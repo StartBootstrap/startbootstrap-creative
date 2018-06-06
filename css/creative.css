@@ -317,11 +317,11 @@ header.masthead p {
   border-radius: 50%;
   border: 1px solid #000;
   position: relative;
+  float: left;
   top: 6px;
   left: 6px;
   background-color: #ff3b47;
   border-color: #9d252b;
-  display: inline-block;
 }
 
 .fakeMinimize {
@@ -352,6 +352,7 @@ header.masthead p {
   width: 450px;
   margin: 0 auto;
   padding: 20px;
+  margin-bottom: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   opacity: .7;
@@ -555,4 +556,27 @@ span {
 
 #prof-pic:hover .hidden-text {
   visibility: visible;
+}
+
+.icon-like-text {
+  color: #BBBBBB;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.logo-buffer {
+  margin-top: 20px;
+}
+
+.hovered {
+  padding: 4px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  border-radius: 50%;
+}
+
+.hovered:hover {
+  color: white;
+  background: orange;
+  border-radius: 50%;
 }
