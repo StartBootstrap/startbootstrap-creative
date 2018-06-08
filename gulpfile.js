@@ -119,20 +119,6 @@ gulp.task('browserSync', function() {
   });
 });
 
-//Configure Prod Server
-// gulp.task('prodserver', function(){
-//   connect.server({
-//     root: ,
-//     port: process.env.PORT || 5000,
-//     livereload: false,
-//   })
-
-//   connect.server({
-//     root: [your_project_path],
-//     port: process.env.PORT || 5000, // localhost:5000
-//     livereload: false
-//   });
-// })
 
 // Dev task
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
@@ -141,8 +127,3 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./*.html', browserSync.reload);
 });
 
-// gulp.task('prod', ['css', 'js', 'prodserver'], function() {
-//   gulp.watch('./scss/*.scss', ['css']);
-//   gulp.watch('./js/*.js', ['js']);
-//   gulp.watch('./*.html', browserSync.reload);
-// });

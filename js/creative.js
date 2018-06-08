@@ -78,8 +78,6 @@
 
   $('.video').magnificPopup({
     type: 'iframe',
-    
-    
     iframe: {
        markup: '<div class="mfp-iframe-scaler">'+
                   '<div class="mfp-close"></div>'+
@@ -97,29 +95,3 @@
   });
 
 })(jQuery); // End of use strict
-
-// const sections = Array.from(document.querySelectorAll("section"));
-// const scrollActions = () => {
-
-//   const rects = sections.map(section => section.getBoundingClientRect());
-//   for (let i = 0; i < sections.length; i++) {
-//     const section = sections[i];
-//     const rect = rects[i];
-//     // console.log(section.classList)
-//     if (rect.top < window.innerHeight - SECTION_MARGIN && rect.bottom > 0) {
-//       section.classList.add("active");
-//     } else {
-//       section.classList.remove("active");
-//     }
-//   }
-
-//   ticking = false;
-// };
-
-// window.addEventListener("scroll", () => {
-//   if (!ticking) {
-//     window.requestAnimationFrame(scrollActions);
-//     ticking = true;
-//   }
-// });
-// scrollActions();
