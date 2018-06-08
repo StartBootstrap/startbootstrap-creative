@@ -23,9 +23,10 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 58
   });
 
+  // console.log(body)
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
@@ -44,7 +45,7 @@
   sr.reveal('.sr-icons', {
     duration: 600,
     scale: 0.3,
-    distance: '0px'
+    distance: '-100px'
   }, 200);
   sr.reveal('.sr-button', {
     duration: 1000,
@@ -63,13 +64,34 @@
     tLoading: 'Loading image #%curr%...',
     mainClass: 'mfp-img-mobile',
     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
+      enabled: false,
+      // navigateByImgClick: true,
+      // preload: [0, 1]
     },
     image: {
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a href="'+item.el.attr('projurl')+'" target="_blank"> click here </a>';
+			},
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    },
+  });
+
+  $('.video').magnificPopup({
+    type: 'iframe',
+    iframe: {
+       markup: '<div class="mfp-iframe-scaler">'+
+                  '<div class="mfp-close"></div>'+
+                  '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                  '<div class="mfp-title">Some caption</div>'+
+                '</div>'
+    },
+    callbacks: {
+      markupParse: function(template, values, item) {
+       values.title = item.el.attr('title');
+      }
     }
+    
+    
   });
 
 })(jQuery); // End of use strict
