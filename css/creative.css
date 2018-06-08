@@ -533,29 +533,39 @@ span {
 
 .my-image {
   width: 350px;
-  float: right;
-  margin: 40px;
+  position: relative;
+  border: 2px;
+  margin: 25px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.my-image:hover{
+  opacity: .8;
+  transition: opacity 1s;
 }
 
 .image-div {
-  margin: auto;
-  width: 100%;
-  opacity: 1;
+  position: relative;
+  text-align: center;
+  transition: opacity 1s;
+
 }
 
-.image-div :hover {
-  opacity: .8;
-}
-
-#prof-pic .hidden-text {
-  float: right;
+.hidden-text {  
+  float: left;
   top: 30px;
   right: 20px;
+  opacity: 0;
+  color: white;
+  transition: opacity 1s;
   visibility: hidden;
 }
 
 #prof-pic:hover .hidden-text {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .icon-like-text {
@@ -579,4 +589,71 @@ span {
   color: white;
   background: orange;
   border-radius: 50%;
+}
+
+.jump-text{
+  -webkit-animation: jumper 3s 1s infinite;
+  -moz-animation: jumper 3s 1s infinite;
+  -o-animation: jumper 3s 1s infinite;
+  animation: jumper 3s linear 1s 1 running;
+}
+
+@keyframes jumper {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 30%;
+  }
+  /* 75% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  } */
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -30px;
+  }
+  75% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-moz-keyframes jumper {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -30px;
+  }
+  75% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-o-keyframes jumper {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -30px;
+  }
+  75% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
 }
