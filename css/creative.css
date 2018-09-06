@@ -91,7 +91,6 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 700;
-  text-transform: uppercase;
   color: #203E67;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -130,21 +129,21 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(32, 62, 103, 0.7);
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: #203E67;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(32, 62, 103, 0.7);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color: #203E67;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -169,7 +168,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header2.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

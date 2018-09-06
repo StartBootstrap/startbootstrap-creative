@@ -6,7 +6,7 @@
   @include transition-all;
   .navbar-brand {
     font-weight: 700;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     color: $primary;
     @include sans-serif-font;
     &:focus,
@@ -39,10 +39,12 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      //color: fade-out($white, .3);
+      color: fade-out($primary, .3);
       &:focus,
       &:hover {
-        color: $white;
+        //color: $white;
+        color: $primary;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -50,9 +52,11 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      //color: fade-out($white, .3);
+      color: fade-out($primary, .3);
       &:hover {
-        color: $white;
+        //color: $white;
+        color: $primary;
       }
     }
     &.navbar-shrink {
