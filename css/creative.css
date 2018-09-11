@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
 body,
 html {
   width: 100%;
@@ -21,7 +27,6 @@ hr.light {
 a {
   color: #F05F40;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -70,6 +75,11 @@ section {
   text-shadow: none;
 }
 
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
 img::selection {
   color: #fff;
   background: transparent;
@@ -85,7 +95,6 @@ img::-moz-selection {
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -171,9 +180,6 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -236,7 +242,6 @@ header.masthead p {
   color: #fff;
   background: rgba(240, 95, 64, 0.9);
   -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -244,6 +249,7 @@ header.masthead p {
   position: absolute;
   top: 50%;
   width: 100%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: center;
 }
@@ -308,5 +314,6 @@ header.masthead p {
 }
 
 .btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
