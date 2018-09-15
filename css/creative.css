@@ -192,6 +192,7 @@ header.masthead p {
 @media (min-width: 768px) {
   header.masthead p {
     font-size: 1.15rem;
+    font-weight: 400;
   }
 }
 
@@ -205,11 +206,19 @@ header.masthead p {
   header.masthead h1 {
     font-size: 3rem;
   }
+  header.masthead p {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 4rem;
+  }
+  header.masthead p {
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 }
 
