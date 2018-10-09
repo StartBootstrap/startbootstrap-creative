@@ -31,6 +31,7 @@
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
+        "npm": "^6.4.1",
         "scrollreveal": "4.0.1"
     },
     "devDependencies": {
