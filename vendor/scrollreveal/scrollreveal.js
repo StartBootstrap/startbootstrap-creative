@@ -1,4 +1,4 @@
-/*! @license ScrollReveal v4.0.1
+/*! @license ScrollReveal v4.0.5
 
 	Copyright 2018 Fisssion LLC.
 
@@ -29,7 +29,7 @@ var defaults = {
 		z: 0
 	},
 	scale: 1,
-	cleanup: true,
+	cleanup: false,
 	container: document.documentElement,
 	desktop: true,
 	mobile: true,
@@ -49,9 +49,7 @@ var defaults = {
 }
 
 function failure() {
-	var root = document.documentElement;
-
-	root.classList.remove('sr');
+	document.documentElement.classList.remove('sr');
 
 	return {
 		clean: function clean() {},
@@ -65,16 +63,13 @@ function failure() {
 }
 
 function success() {
-	var html = document.documentElement;
-	var body = document.body;
+	document.documentElement.classList.add('sr');
 
-	html.classList.add('sr');
-
-	if (body) {
-		body.style.height = '100%';
+	if (document.body) {
+		document.body.style.height = '100%';
 	} else {
 		document.addEventListener('DOMContentLoaded', function () {
-			body.style.height = '100%';
+			document.body.style.height = '100%';
 		});
 	}
 }
@@ -149,7 +144,7 @@ function isDomNodeList(x) {
 				(x.length === 0 || isDomNode(x[0]))
 }
 
-/*! @license Tealight v0.3.0
+/*! @license Tealight v0.3.6
 
 	Copyright 2018 Fisssion LLC.
 
@@ -172,21 +167,21 @@ function isDomNodeList(x) {
 	SOFTWARE.
 
 */
-function index(target, context) {
-	if ( context === void 0 ) { context = document; }
+function tealight(target, context) {
+  if ( context === void 0 ) { context = document; }
 
-	if (target instanceof Array) { return target.filter(isDomNode) }
-	if (isDomNode(target)) { return [target] }
-	if (isDomNodeList(target)) { return Array.prototype.slice.call(target) }
-	if (typeof target === 'string') {
-		try {
-			var query = context.querySelectorAll(target);
-			return Array.prototype.slice.call(query)
-		} catch (err) {
-			return []
-		}
-	}
-	return []
+  if (target instanceof Array) { return target.filter(isDomNode); }
+  if (isDomNode(target)) { return [target]; }
+  if (isDomNodeList(target)) { return Array.prototype.slice.call(target); }
+  if (typeof target === "string") {
+    try {
+      var query = context.querySelectorAll(target);
+      return Array.prototype.slice.call(query);
+    } catch (err) {
+      return [];
+    }
+  }
+  return [];
 }
 
 function isObject(x) {
@@ -236,7 +231,7 @@ function rinse() {
 	 * Take stock of active element IDs.
 	 */
 	try {
-		each(index('[data-sr-id]'), function (node) {
+		each(tealight('[data-sr-id]'), function (node) {
 			var id = parseInt(node.getAttribute('data-sr-id'));
 			elementIds.active.push(id);
 		});
@@ -301,7 +296,7 @@ function clean(target) {
 
 	var dirty;
 	try {
-		each(index(target), function (node) {
+		each(tealight(target), function (node) {
 			var id = node.getAttribute('data-sr-id');
 			if (id !== null) {
 				dirty = true;
@@ -359,9 +354,9 @@ function destroy() {
 	};
 }
 
-/*! @license Rematrix v0.2.2
+/*! @license Rematrix v0.3.0
 
-	Copyright 2018 Fisssion LLC.
+	Copyright 2018 Julian Lloyd.
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
@@ -471,11 +466,10 @@ function multiply(m, x) {
  * matrix passed in, but will return the identity matrix as a
  * fallback.
  *
- * **Tip:** In virtually all cases, this method is used to convert
- * a CSS matrix (retrieved as a `string` from computed styles) to
- * its equivalent array format.
+ * > **Tip:** This method is used to convert a CSS matrix (retrieved as a
+ * `string` from computed styles) to its equivalent array format.
  *
- * @param  {string} source - String containing a valid CSS `matrix` or `matrix3d` property.
+ * @param  {string} source - `matrix` or `matrix3d` CSS Transform value.
  * @return {array}
  */
 function parse(source) {
@@ -1045,9 +1039,11 @@ function initialize() {
 		if (element.visible) {
 			styles.push(element.styles.opacity.computed);
 			styles.push(element.styles.transform.generated.final);
+			element.revealed = true;
 		} else {
 			styles.push(element.styles.opacity.generated);
 			styles.push(element.styles.transform.generated.initial);
+			element.revealed = false;
 		}
 
 		element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
@@ -1117,7 +1113,7 @@ function reveal(target, options, syncing) {
 			sequence$$1 = new Sequence(interval);
 		}
 
-		var nodes = index(target);
+		var nodes = tealight(target);
 		if (!nodes.length) {
 			throw new Error('Invalid reveal target.')
 		}
@@ -1152,7 +1148,7 @@ function reveal(target, options, syncing) {
 				return elementBuffer // skip elements that are disabled
 			}
 
-			var containerNode = index(config.container)[0];
+			var containerNode = tealight(config.container)[0];
 			if (!containerNode) {
 				throw new Error('Invalid container.')
 			}
@@ -1303,7 +1299,7 @@ var polyfill$1 = (function () {
 	}
 })();
 
-var index$1 = window.requestAnimationFrame ||
+var index = window.requestAnimationFrame ||
 	window.webkitRequestAnimationFrame ||
 	window.mozRequestAnimationFrame ||
 	polyfill$1;
@@ -1395,7 +1391,7 @@ function delegate(
 	if ( event === void 0 ) event = { type: 'init' };
 	if ( elements === void 0 ) elements = this.store.elements;
 
-	index$1(function () {
+	index(function () {
 		var stale = event.type === 'init' || event.type === 'resize';
 
 		each(this$1.store.containers, function (container) {
@@ -1447,7 +1443,7 @@ function transitionSupported() {
 	return 'transition' in style || 'WebkitTransition' in style
 }
 
-var version = "4.0.1";
+var version = "4.0.5";
 
 var boundDelegate;
 var boundDestroy;
@@ -1485,7 +1481,7 @@ function ScrollReveal(options) {
 	}
 
 	try {
-		var container = index(buffer.container)[0];
+		var container = tealight(buffer.container)[0];
 		if (!container) {
 			throw new Error('Invalid container.')
 		}
