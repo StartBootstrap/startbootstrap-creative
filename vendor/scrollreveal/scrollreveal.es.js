@@ -1,4 +1,4 @@
-/*! @license ScrollReveal v4.0.1
+/*! @license ScrollReveal v4.0.5
 
 	Copyright 2018 Fisssion LLC.
 
@@ -27,7 +27,7 @@ var defaults = {
 		z: 0
 	},
 	scale: 1,
-	cleanup: true,
+	cleanup: false,
 	container: document.documentElement,
 	desktop: true,
 	mobile: true,
@@ -47,9 +47,7 @@ var defaults = {
 }
 
 function failure() {
-	var root = document.documentElement;
-
-	root.classList.remove('sr');
+	document.documentElement.classList.remove('sr');
 
 	return {
 		clean: function clean() {},
@@ -63,16 +61,13 @@ function failure() {
 }
 
 function success() {
-	var html = document.documentElement;
-	var body = document.body;
+	document.documentElement.classList.add('sr');
 
-	html.classList.add('sr');
-
-	if (body) {
-		body.style.height = '100%';
+	if (document.body) {
+		document.body.style.height = '100%';
 	} else {
 		document.addEventListener('DOMContentLoaded', function () {
-			body.style.height = '100%';
+			document.body.style.height = '100%';
 		});
 	}
 }
@@ -712,9 +707,11 @@ function initialize() {
 		if (element.visible) {
 			styles.push(element.styles.opacity.computed);
 			styles.push(element.styles.transform.generated.final);
+			element.revealed = true;
 		} else {
 			styles.push(element.styles.opacity.generated);
 			styles.push(element.styles.transform.generated.initial);
+			element.revealed = false;
 		}
 
 		element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
@@ -1072,7 +1069,7 @@ function transitionSupported() {
 	return 'transition' in style || 'WebkitTransition' in style
 }
 
-var version = "4.0.1";
+var version = "4.0.5";
 
 var boundDelegate;
 var boundDestroy;
