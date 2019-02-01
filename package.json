@@ -1,7 +1,7 @@
 {
     "title": "Creative",
     "name": "startbootstrap-creative",
-    "version": "5.0.2",
+    "version": "5.0.3",
     "description": "Creative is a stylish one page HTML theme for Bootstrap.",
     "keywords": [
         "css",
@@ -26,7 +26,7 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.6.3",
+        "@fortawesome/fontawesome-free": "5.7.0",
         "bootstrap": "4.2.1",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
