@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Creative v5.0.2 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2018 Start Bootstrap
+ * Start Bootstrap - Creative v5.0.3 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
