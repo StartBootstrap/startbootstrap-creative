@@ -5,8 +5,18 @@ html {
   height: 100%;
 }
 
+// ## Change in variables ##
 body {
   @include serif-font;
+}
+
+// ## Change in variables ##
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  @include sans-serif-font;
 }
 
 hr {
@@ -19,12 +29,8 @@ hr.light {
   border-color: $white;
 }
 
-a {
-  color: $primary;
-  @include transition-all;
-  &:hover {
-    color: darken($primary, .1);
-  }
+.btn-xl {
+  padding: 1rem 2rem;
 }
 
 h1,
@@ -34,14 +40,6 @@ h4,
 h5,
 h6 {
   @include sans-serif-font;
-}
-
-.bg-primary {
-  background-color: $primary !important;
-}
-
-.bg-dark {
-  background-color: $gray-900 !important;
 }
 
 .text-faded {
@@ -54,26 +52,4 @@ section {
 
 .section-heading {
   margin-top: 0;
-}
-
-::-moz-selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
-}
-
-::selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
-}
-
-img::selection {
-  color: $white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: $white;
-  background: transparent;
 }
