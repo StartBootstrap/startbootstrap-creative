@@ -2,9 +2,11 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
-  background-position: center center;
-  @include background-cover;
+  background: linear-gradient(to bottom, #{fade-out($brown, .3)} 0%,#{fade-out($brown, .3)} 100%), url('https://source.unsplash.com/505eectW54k/1900x1080');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
