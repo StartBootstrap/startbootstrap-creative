@@ -1,39 +1,30 @@
 // Styling for the masthead
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background: linear-gradient(to bottom, #{fade-out($brown, .3)} 0%,#{fade-out($brown, .3)} 100%), url('https://source.unsplash.com/505eectW54k/1900x1080');
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../img/bg-masthead.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
   h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
-  p {
-    font-weight: 300;
-  }
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
     p {
       font-size: 1.15rem;
     }
-  }
-  @media (min-width: 992px) {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
     h1 {
       font-size: 3rem;
     }
   }
-  @media (min-width: 1200px) {
+  @include media-breakpoint-up(xl) {
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
 }
