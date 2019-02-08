@@ -5,23 +5,15 @@ html {
   height: 100%;
 }
 
-// ## Change in variables ##
-body {
-  @include serif-font;
+// Typography
+.text-white-75 {
+  color: fade-out($white, .25);
 }
 
-// ## Change in variables ##
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
-  @include sans-serif-font;
-}
-
-hr {
-  max-width: 50px;
-  border-width: 3px;
+// Custom horizontal rules
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
   border-color: $primary;
 }
 
@@ -29,27 +21,21 @@ hr.light {
   border-color: $white;
 }
 
+// Button restyling
+.btn {
+  font-family: $font-family-sans-serif;
+}
+
 .btn-xl {
-  padding: 1rem 2rem;
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font;
-}
-
-.text-faded {
-  color: fade-out($white, .3);
-}
-
-section {
+// Content sections
+.page-section {
   padding: 8rem 0;
-}
-
-.section-heading {
-  margin-top: 0;
 }
