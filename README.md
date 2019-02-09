@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![Creative Preview](https://startbootstrap.com/assets/img/templates/creative.jpg)](https://blackrockdigital.github.io/startbootstrap-creative/)
+[![Creative Preview](https://startbootstrap.com/assets/img/screenshots/themes/creative.png)](https://blackrockdigital.github.io/startbootstrap-creative/)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
 
@@ -37,7 +37,7 @@ After installation, run `npm install` and then run `gulp dev` which will open up
 #### Gulp Tasks
 
 - `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
 - `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
 - `gulp js` minifies the themes JS file
 - `gulp vendor` copies dependencies from node_modules to the vendor directory
