@@ -1,75 +1,75 @@
-// Styling for the navbar
+// Base styling for the navbar
 #mainNav {
-  border-bottom: 1px solid fade-out($gray-900, .9);
+  box-shadow: $box-shadow;
   background-color: $white;
-  @include sans-serif-font;
-  @include transition-all;
+  transition: background-color 0.2s ease;
   .navbar-brand {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $primary;
-    @include sans-serif-font;
-    &:focus,
-    &:hover {
-      color: darken($primary, .1);
-    }
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-bold;
+    color: $gray-900;
   }
   .navbar-nav {
-    > li.nav-item {
-       > a.nav-link,
-      > a.nav-link:focus {
-        font-size: .9rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $gray-900;
-        &:hover {
+    .nav-item {
+      .nav-link {
+        color: $gray-600;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-bold;
+        font-size: 0.9rem;
+        padding: 0.75rem 0;
+        &:hover,
+        &:active {
           color: $primary;
         }
         &.active {
           color: $primary !important;
-          background-color: transparent;
-          &:hover {
-            background-color: transparent;
-          }
         }
       }
     }
   }
-  @media (min-width: 992px) {
-    border-color: transparent;
+  @include media-breakpoint-up(lg) {
+    // Base styling for the navbar - screen sizes greater than the large breakpoint
+    box-shadow: none;
     background-color: transparent;
     .navbar-brand {
       color: fade-out($white, .3);
-      &:focus,
       &:hover {
         color: $white;
       }
     }
-    .navbar-nav > li.nav-item > a.nav-link {
-      padding: 0.5rem 1rem;
-    }
-    .navbar-nav > li.nav-item > a.nav-link,
-    .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
-      &:hover {
-        color: $white;
-      }
-    }
-    &.navbar-shrink {
-      border-bottom: 1px solid fade-out($gray-900, .9);
-      background-color: $white;
-      .navbar-brand {
-        color: $primary;
-        &:focus,
-        &:hover {
-          color: darken($primary, .1);
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: fade-out($white, .3);
+          padding: 0 1rem;
+          &:hover {
+            color: $white;
+          }
+        }
+        &:last-child {
+          .nav-link {
+            padding-right: 0;
+          }
         }
       }
-      .navbar-nav > li.nav-item > a.nav-link,
-      .navbar-nav > li.nav-item > a.nav-link:focus {
+    }
+    // Navbar styling applied when the page is scrolled
+    &.navbar-scrolled {
+      box-shadow: $box-shadow;
+      background-color: $white;
+      .navbar-brand {
         color: $gray-900;
         &:hover {
           color: $primary;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $gray-900;
+            &:hover {
+              color: $primary;
+            }
+          }
         }
       }
     }

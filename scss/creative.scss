@@ -1,8 +1,11 @@
+// Import custom variables (overrides Bootstrap default variables)
 @import "variables.scss";
-@import "mixins.scss";
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import custom styles
 @import "global.scss";
 @import "navbar.scss";
 @import "masthead.scss";
-@import "services.scss";
 @import "portfolio.scss";
-@import "bootstrap-overrides.scss";
