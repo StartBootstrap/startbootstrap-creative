@@ -1,7 +1,7 @@
 {
     "title": "Creative",
     "name": "startbootstrap-creative",
-    "version": "5.1.0",
+    "version": "5.1.1",
     "description": "Creative is a stylish one page HTML theme for Bootstrap.",
     "keywords": [
         "css",
@@ -30,8 +30,7 @@
         "bootstrap": "4.2.1",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0",
-        "scrollreveal": "4.0.5"
+        "magnific-popup": "^1.1.0"
     },
     "devDependencies": {
         "browser-sync": "2.26.3",
