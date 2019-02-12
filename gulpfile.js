@@ -76,7 +76,8 @@ function css() {
     .src("./scss/**/*.scss")
     .pipe(plumber())
     .pipe(sass({
-      outputStyle: "expanded"
+      outputStyle: "expanded",
+      includePaths: "./node_modules/bootstrap/scss",
     }))
     .on("error", sass.logError)
     .pipe(autoprefixer({
@@ -123,7 +124,7 @@ function watchFiles() {
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, gulp.parallel(css, js));
-const watch = gulp.parallel(watchFiles, browserSync);
+const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
 exports.css = css;
