@@ -77,7 +77,7 @@ function css() {
     .pipe(plumber())
     .pipe(sass({
       outputStyle: "expanded",
-      includePaths: "./node_modules/bootstrap/scss",
+      includePaths: "./node_modules",
     }))
     .on("error", sass.logError)
     .pipe(autoprefixer({
