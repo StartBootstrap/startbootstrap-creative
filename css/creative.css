@@ -12,9 +12,6 @@ hr {
   max-width: 100px;
   border-width: 3px;
   border-color: #F05F40;
-
- 
-  
 }
 
 hr.light {
@@ -140,20 +137,25 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
+    /*color: black; */
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 0.5rem 1rem;
+    padding: 0.5 1rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
+   /* color: rgba(255, 255, 255, 0.7); */
+   color: #f2f2f2;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    /*color: #fff;*/
+    background: white;
+    border-radius: 10px;
+  color: black;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -270,3 +272,58 @@ header.masthead p {
 	padding: 0 0 2rem 0;
 }
 
+
+/* newly edited CSS */
+
+.container img {
+  width: 40%;
+}
+
+@media (min-width: 992px) {
+.col-lg-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+}
+}
+
+.col-lg-3 p {
+  margin-top: 10px;
+}
+
+.container-fluid  img {
+  opacity: 0.6;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container-fluid  img:hover {
+  opacity: 1 ;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.nav-link a {
+color: black !important;
+}
+
+section#projects {
+background-color: gainsboro;
+}
+
+ul.navbar-nav.ml-auto {
+  background-color: #333;
+  border-radius: 10px
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
