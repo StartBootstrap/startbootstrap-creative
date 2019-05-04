@@ -27,6 +27,10 @@ a {
   }
 }
 
+a.light {
+  color: #d8ab51;
+}
+
 h1,
 h2,
 h3,
@@ -34,6 +38,12 @@ h4,
 h5,
 h6 {
   @include sans-serif-font;
+}
+
+.text-light-important {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .bg-primary {
