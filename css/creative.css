@@ -48,6 +48,12 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.team-bio {
+  font-size: 0.95rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .bg-primary {
   background-color: #203E67 !important;
 }
