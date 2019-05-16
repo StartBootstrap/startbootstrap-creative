@@ -46,6 +46,7 @@
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.2",
-        "merge-stream": "^1.0.1"
+        "merge-stream": "^1.0.1",
+        "tar": "^4.4.8"
     }
 }
