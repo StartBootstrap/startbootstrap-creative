@@ -245,7 +245,7 @@
                 </div>
 		<div class="col-lg-4 mx-auto text-center">
                     <h4 class="mb-3">Vivek Nallur</h4>
-		    <h6 class="mb-4"> Research and Academic Consultant </h6>
+		    <h6 class="mb-4">  - </h6>
                     <p class="text-faded mb-4 team-bio">
 Vivek Nallur is an itinerant academic, currently working as a lecturer/assistant professor in University College Dublin. His main research interests are in simulation of complex systems, emergence, and autonomous and adaptive systems. He has worked with evolutionary computing, multi-agent systems and machine-learning for his research. He was part of the first team to perform automated fraud alerts using data mining and outlier detection for Customs and Excise Deptt of India, in the early 2000s. He has a PhD from the University of Birmingham (UK) and a Masters from Carnegie Mellon University (US). In a previous avatar, he used to work in the Silicon Valley, for VMware Inc.
 		   </p>
@@ -390,29 +390,5 @@ Project Name
 <script src="js/creative.min.js"></script>
 
 </body>
-
-<script>
-    function parseJwt(token) {
-        var base64Url = token.split('.')[1];
-        var base64 = base64Url.replace('-', '+').replace('_', '/');
-        return JSON.parse(window.atob(base64));
-    }
-
-    $(document).ready(function () {
-        $(".startnowbutton").on("click", function () {
-            var token = localStorage.getItem("token");
-            if (!token) {
-                window.location = "https://revlo.club/root/app/#/login";
-            } else {
-                var parsedToken = parseJwt(token);
-                if (new Date().getTime() > (parsedToken.exp * 1000)) {
-                    window.location = "https://revlo.club/root/app/#/login";
-                } else {
-                    window.location = "/material/"
-                }
-            }
-        })
-    })
-</script>
 
 </html>
