@@ -40,6 +40,10 @@ h6 {
   @include sans-serif-font;
 }
 
+.title {
+
+}
+
 .text-light-important {
   font-weight: 300;
   font-size: 1.21rem;
@@ -61,7 +65,7 @@ h6 {
   background-color: $gray-900 !important;
 }
 
-icon-color {
+.icon-color {
   color: #ec790d !important;
 }
 
