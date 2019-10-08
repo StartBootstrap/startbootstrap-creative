@@ -61,6 +61,10 @@ h6 {
   background-color: $gray-900 !important;
 }
 
+.text-secondary {
+  color:$secondary !important;
+}
+
 .text-faded {
   color: fade-out($white, .3);
 }
