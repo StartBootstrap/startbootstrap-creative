@@ -30,7 +30,7 @@ a:hover {
 }
 
 a.light {
-  color: #d8ab51;
+  color: #06b7aa;
 }
 
 h1,
@@ -40,6 +40,10 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.title {
+  font-family: courier;
 }
 
 .text-light-important {
@@ -63,7 +67,7 @@ h6 {
 }
 
 .icon-color {
-  color: #ec790d !important;
+  color: #0d96c4 !important;
 }
 
 .text-faded {
