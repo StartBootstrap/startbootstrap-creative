@@ -62,6 +62,10 @@ h6 {
   background-color: #212529 !important;
 }
 
+icon-color {
+  color: #ec790d !important;
+}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
