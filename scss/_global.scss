@@ -42,7 +42,28 @@ h6 {
 
 .title {
   font-family: courier;
+  white-space: nowrap;
+  overflow: hidden;
+  //animation: typed 10s steps(30,end);
+  //width: 18em;
+}
 
+.blinking_dot{
+  animation: blink 1s infinite;
+}
+
+@keyframes typed{ 
+  from { width: 0; } 
+} 
+
+@keyframes typed2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
 }
 
 .text-light-important {
@@ -84,6 +105,13 @@ section {
 
 .section-heading {
   margin-top: 0;
+}
+
+.team-profile-box {
+  padding: 20px 10px;
+  background-color: #0d96c4;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 ::-moz-selection {
