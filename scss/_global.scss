@@ -18,6 +18,10 @@ h6 {
   @include sans-serif-font;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 p {
   font-size: 1.15em;
   font-weight: 300;
@@ -98,7 +102,7 @@ section {
 }
 
 .desc-text {
-  font-style: italic;
+  //font-style: italic;
   font-size: 1.25em;
   font-weight: 300;
 }
