@@ -9,6 +9,56 @@ body {
   @include serif-font;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include sans-serif-font;
+}
+
+p {
+  font-size: 1.15em;
+  font-weight: 300;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-dark {
+  background-color: $gray-900 !important;
+}
+
+.tagline {
+  font-family: courier;
+  //white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.7rem;
+  font-weight: 300;
+  //animation: typed 10s steps(30,end);
+  //width: 30ch;
+}
+
+.blinking_dot{
+  animation: blink 1.5s infinite;
+}
+
+@keyframes typed{ 
+  from { width: 0; } 
+} 
+
+@keyframes typed2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
 hr {
   max-width: 50px;
   border-width: 3px;
@@ -31,87 +81,47 @@ a.light {
   color: #06b7aa;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font;
-}
-
-.title {
-  font-family: courier;
-  white-space: nowrap;
-  overflow: hidden;
-  //animation: typed 10s steps(30,end);
-  //width: 18em;
-}
-
-.blinking_dot{
-  animation: blink 1s infinite;
-}
-
-@keyframes typed{ 
-  from { width: 0; } 
-} 
-
-@keyframes typed2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-.text-light-important {
-  font-weight: 300;
-  font-size: 1.21rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.team-bio {
-  font-size: 0.95rem;
-  padding-left: 20px;
-  padding-right: 20px;
-
-}
-
-.bg-primary {
-  background-color: $primary !important;
-}
-
-.bg-dark {
-  background-color: $gray-900 !important;
-}
-
 .icon-color {
   color: #0d96c4 !important;
-}
-
-.text-faded {
-  color: fade-out($white, .3);
-}
-
-section {
-  padding: 5rem 0;
 }
 
 .top-empty {
   padding: 1.8rem 0;
 }
 
+section {
+  padding: 5rem 0;
+}
+
 .section-heading {
   margin-top: 0;
 }
 
+.desc-text {
+  font-style: italic;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.text-important {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.text-faded {
+  color: fade-out($white, .2);
+}
+
 .team-profile-box {
-  padding: 20px 10px;
+  padding: 1.2em;
   background-color: #0d96c4;
-  margin: 10px;
   border-radius: 5px;
+  height:100%;
+}
+
+.image-box {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 ::-moz-selection {

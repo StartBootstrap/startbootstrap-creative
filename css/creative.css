@@ -8,48 +8,37 @@ body {
   font-family: 'Ubuntu', 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: #03233e;
-}
-
-hr.light {
-  border-color: #fff;
-}
-
-a {
-  color: #03233e;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-a:hover {
-  color: #03233e;
-}
-
-a.light {
-  color: #06b7aa;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.title {
+p {
+  font-size: 1.15em;
+  font-weight: 300;
+}
+
+.bg-primary {
+  background-color: #03233e !important;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.tagline {
   font-family: courier;
-  white-space: nowrap;
   overflow: hidden;
+  font-size: 1.7rem;
+  font-weight: 300;
 }
 
 .blinking_dot {
-  animation: blink 1s infinite;
+  animation: blink 1.5s infinite;
 }
 
 @keyframes typed {
@@ -76,51 +65,72 @@ h6 {
   }
 }
 
-.text-light-important {
-  font-weight: 300;
-  font-size: 1.21rem;
-  color: rgba(255, 255, 255, 0.8);
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #03233e;
 }
 
-.team-bio {
-  font-size: 0.95rem;
-  padding-left: 20px;
-  padding-right: 20px;
+hr.light {
+  border-color: #fff;
 }
 
-.bg-primary {
-  background-color: #03233e !important;
+a {
+  color: #03233e;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.bg-dark {
-  background-color: #212529 !important;
+a:hover {
+  color: #03233e;
+}
+
+a.light {
+  color: #06b7aa;
 }
 
 .icon-color {
   color: #0d96c4 !important;
 }
 
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
+.top-empty {
+  padding: 1.8rem 0;
 }
 
 section {
   padding: 5rem 0;
 }
 
-.top-empty {
-  padding: 1.8rem 0;
-}
-
 .section-heading {
   margin-top: 0;
 }
 
+.desc-text {
+  font-style: italic;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.text-important {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .team-profile-box {
-  padding: 20px 10px;
+  padding: 1.2em;
   background-color: #0d96c4;
-  margin: 10px;
   border-radius: 5px;
+  height: 100%;
+}
+
+.image-box {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 ::-moz-selection {
@@ -148,7 +158,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -157,7 +167,7 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   color: #03233e;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -233,7 +243,7 @@ img::-moz-selection {
 #otherNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -242,7 +252,7 @@ img::-moz-selection {
 #otherNav .navbar-brand {
   font-weight: 700;
   color: #03233e;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #otherNav .navbar-brand:focus, #otherNav .navbar-brand:hover {
@@ -376,6 +386,8 @@ header.masthead p {
   position: relative;
   display: block;
   max-width: 90%;
+  max-height: 200px;
+  overflow-y: hidden;
   margin: 0 auto;
 }
 
@@ -405,7 +417,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -444,7 +456,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-xl {
