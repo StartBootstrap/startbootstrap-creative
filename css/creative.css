@@ -385,7 +385,7 @@ header.masthead p {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 90%;
+  max-width: 95%;
   max-height: 200px;
   overflow-y: hidden;
   margin: 0 auto;
