@@ -34,6 +34,10 @@ p {
   background-color: #212529 !important;
 }
 
+.bg-light {
+  background-color: #fff !important;
+}
+
 .tagline {
   font-family: courier;
   overflow: hidden;
@@ -389,7 +393,7 @@ header.masthead p {
   position: relative;
   display: block;
   max-width: 95%;
-  max-height: 200px;
+  max-height: 225px;
   overflow-y: hidden;
   margin: 0 auto;
 }
