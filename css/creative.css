@@ -9666,7 +9666,7 @@ header.masthead {
 }
 
 header.masthead:hover {
-  background: url("../img/Drill.jpg");
+  background: url("../img/Drill.jpg") no-repeat;
 }
 
 
