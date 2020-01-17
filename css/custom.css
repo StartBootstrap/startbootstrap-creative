@@ -47,7 +47,10 @@
   padding-bottom: 20px
 }
 
-.personal_icon{
+.personal_brand{
   height: 50px;
   width: 50px;
+  max-height: 100%;
+  max-width: 100%;
+
 }
