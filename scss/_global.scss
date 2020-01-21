@@ -129,7 +129,6 @@ section {
 
 .team-profile-box-new {
   padding: 1.2em;
-  //background-color: #0d96c4;
   border-radius: 5px;
   height:100%;
 }
@@ -151,6 +150,10 @@ section {
   overflow: hidden;
   margin: 0 auto;
   max-width: 100%;
+}
+
+.fa-1_25x {
+  font-size: 1.25em;
 }
 
 ::-moz-selection {

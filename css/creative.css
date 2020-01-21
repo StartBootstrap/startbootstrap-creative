@@ -160,6 +160,10 @@ section {
   max-width: 100%;
 }
 
+.fa-1_25x {
+  font-size: 1.25em;
+}
+
 ::-moz-selection {
   color: #fff;
   background: #212529;
