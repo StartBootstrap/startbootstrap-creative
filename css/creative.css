@@ -124,7 +124,11 @@ section {
   font-size: 1.25rem;
 }
 
-.text-faded {
+.bg-dark.text-muted {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-primary.text-muted {
   color: rgba(255, 255, 255, 0.8);
 }
 
