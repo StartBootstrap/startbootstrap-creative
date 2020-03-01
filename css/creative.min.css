@@ -8837,7 +8837,14 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
+.descrpicionSanti {
+  padding-left: 2rem;
+  padding-top: 5rem;
+}
+.descrpicionJulio {
+  padding-left: 2rem;
 
+}
 .imagenPractica {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
