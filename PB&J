@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PB&J: Being yourself</title>
+		<meta charset="utf-8">
+		<meta name="description" content="motivation">
+		<meta name="author" content="David">
+		<meta name="keywords" content="PB&J, Passion Builder & Joyness">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/PB&J.css">
+
+		<!--main-site-->
+	<body id="grid">
+
+		<div id="item1">
+			<h1><center>Passion, Builder & Joyness</center></h1>
+			<hr>
+			<nav id="navbar">
+				<a href="http://www.google.com" target=_blank><center> be sure to have your page ready for research	on google</center></a>
+			</nav>
+		</div>
+	<div id="item2">
+		<section id="headline">
+		<P>This web page is a excercise to help you understand the value of one's potential. In my language, the word <big><u><b>causality</b></u></big> means that everything has a effect to a cause. It's sort of like a butterfly effect, in which one's action can have a impact to everyone else. So, don't feel isolated or ignored because every matter that makes up to create you makes a great impact to Earth. Don't let people bring you down  cause they too feel drowned and stuck to the abyss of despair. Instead, focus on your goals and dreams that will make a greater impact to humanity because every live matters (and I truely mean it). Before we can discuss about suicide, let me motivate you with three explanations to keep everyone to have doubts in life. No should have a problem following these guidelines.
+		</P>
+		</section>
+			<ol>
+					<li><h2>Passion</h2></li>
+						<form id="box-3">
+				<img src="https://www.bing.com/th?id=OIP.qlUkaDPuVQ-AHhyhUpFszgHaEg&pid=Api&rs=1" alt="pyramid" width=550>
+						</form>
+					<p> Before one can change the world, one must understand that they can't change the world by themselves. It requires a team excercise and building connection in order to strenghten the pyramid. I know that there are people that find making friends is not their speacialty, but it's not the matter of making friends rather making connections like a road. Be sure to learn how to make good conversation and that alone can help you sharpen your interaction skills. Just be aware that some people perfer to be left alone at some time. It's only necessary to make ineractions to people that are sure to benefit you in life (Remember that causality  has the effects on every single individual so use it to your advantage by finding the good path and not the demise one). 
+					</p>
+										
+					<li><h2>Builder</h2></li>
+						<form id="box-1">
+				<img src="https://image.shutterstock.com/z/stock-photo-house-builder-cartoon-illustration-169046759.jpg" alt="cartoon builder" Width="350">
+						</form>
+					<p>Being a builder doesn't mean building large human monuments that will stand for thousands of decades. It doesn't require to be natural at building creative sculptures, but rather being able to layout a trail of dreams. There is a path for every person and each path has many possibilites of outcomes that one can't comprehend. I, for one, have many blueprints that layout my dreams: some are apprehanded and others are dismissed. Don't settle for one path, make multiple paths as it is normal to abandon a sunken ship in order to live. Don't be afraid to reset your whole pathway as failure to do so can lead to a unfortunate demise. I can promise you that the hardest thing to do in life is to make a map and follow the trails; on the other hand, other tasks can be simply accomplish through will-power. To make things short, be a great builder to make great plans for the future of you and the mankind.	
+					</p>
+					<li><h2>Joyness</h2></li>
+					<form id="box-2">
+				<img src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2018/06/category-pie-1.png?w=1090" alt="hapiness chart" width="350" >
+						</form>	
+					<p>Notice the chart above this divs says "predicted categories." We could all assume that these estimate data is fake and only try to make some people feel vunerable. However, if we actually take account to the chart, do you see every people being happy for their entire day( quick anwser: <b><big>NO</big></b>)? Everyone has their ups and downs: maybe it's because of their friend's new friend that makes you jealous, maybe it's because of the smart kid in your class is going to Harvard and not you, maybe it's because of the time you got flatout rejected by the most popular girl and the whole school hears about it. Stuff like these can led to depression and in some sad cases, suicide. Don't let one thing make the decision of your existence. To erase such burdens, one must achieve a great goal that can outshine our past mistakes and drama. Be aware that every single human being on this planet holds value to the idea of causality. Don't play as the hero if you're certain that you are going to regret. Instead, focus on things that you can achieve as small steps can led to enormaous achievements. Trust me, I have been there.	
+					</p>
+			</ol>	
+			<hr>
+		<h2 class="wavecheck">MINI-GAME</h2>
+			<p>It's not actually a game, rather it's one of those Quotev quiz that you play for fun. Simply select a number on the boxes and you will see a message (Kinda like a fortune cookie.).</p>	
+
+
+	<div class="flex-container">
+
+
+
+			<button class="open-button" onclick="openForm()">1</button>
+			<button class="open-button" onclick="openFormB()">2</button>			
+			<button class="open-button" onclick="openFormC()">3</button>
+			<button class="open-button" onclick="openFormD()">4</button>
+			<button class="open-button" onclick="openFormE()">5</button>
+			<button class="open-button" onclick="openFormF()">6</button>
+			<button class="open-button" onclick="openFormG()">7</button>
+			<button class="open-button" onclick="openFormH()">8</button>
+			<button class="open-button" onclick="openFormI()">9</button>
+
+			<div class="popup" id="myText">
+				<p>You have a strong leadership!</p>
+			<button type="button" class="btn" onclick="closeForm()">Close</button>				
+			</div>
+
+			<div class="popup" id="myTextB">
+				<p>You have great duality!</p>
+			<button type="button" class="btn" onclick="closeFormB()">Close</button>				
+			</div>
+		</div>
+			  
+			<div class="popup" id="myTextC">
+				<p>You have a sharp intuition!</p>
+			<button type="button" class="btn" onclick="closeFormC()">Close</button>				
+			</div>
+		</div>
+			  
+			<div class="popup" id="myTextD">
+				<p>You have a steady calmness!</p>
+			<button type="button" class="btn" onclick="closeFormD()">Close</button>				
+			</div>
+		</div>
+			  
+			<div class="popup" id="myTextE">
+				<p>You have a great sense of adventure!</p>
+			<button type="button" class="btn" onclick="closeFormE()">Close</button>				
+			</div>
+		</div>
+			  
+			<div class="popup" id="myTextF">
+				<p>You are balance between physical and spiritual!</p>
+			<button type="button" class="btn" onclick="closeFormF()">Close</button>				
+			</div>
+		</div>
+			  
+			<div class="popup" id="myTextG">
+				<p>You have a reliable introspection!</p>
+			<button type="button" class="btn" onclick="closeFormG()">Close</button>				
+			</div>
+		</div>
+				  
+			<div class="popup" id="myTextH">
+				<p>You have prosperity waiting for you!</p>
+			<button type="button" class="btn" onclick="closeFormH()">Close</button>				
+			</div>
+		</div>
+			  
+			<div class="popup" id="myTextI">
+				<p>Wisedom is your key to accomplishment!</p>
+			<button type="button" class="btn" onclick="closeFormI()">Close</button>				
+			</div>
+		</div>	
+		
+	</div>
+
+	</div>			
+	<div id="item5">
+		<P>If you feel confident to take the world, be sure to have a strong heart and click on <a href="https://www.google.com" target="_blank">HOPE</a> to see the world. If not, then go to google in the top of the web page in order to watch some anime or funny moments on youtube. What I suggest is to follow your true passion as it could led to a happy ending.</P>
+	<!--	<p>This is my first attempt to reach out towards other people. I don't like to ask much, but if you can be genourous and donate for more upcoming projects, I would be happy and even more encourage to make even more projects that can benefit the furthest person I can reach through online. I will still make projects regardless, but I too have struggles to worry about and can't complete my mission unless I ask for your charity. In the end, genourosity can make a perrson feel great about themselves.</p>
+		<button>Donate</button> -->
+		<p>Copyright &copy; 2019, World Destiny</p>
+	</div>
+	<script src="js/PB&J.js"></script>
+	</body>
+</html>
+
+
