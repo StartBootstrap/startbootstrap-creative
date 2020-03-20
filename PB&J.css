@@ -1,0 +1,28 @@
+html{
+    background-color:purple;
+}
+h1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrw6b8Vtt5GU8RkgZCtM3IwsoRC9qcpDYW9LtF4GML0RWpZNfN);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:4em;
+    padding:1em;
+    color:white;
+    display:grid;
+    grid-column: auto;
+}
+#navbar{
+    background-color: gold;
+    color: indigo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+#headline{
+    background-color:black;
+}
+h2{
+    background-color:black;
+    color: orange;
+}
+
