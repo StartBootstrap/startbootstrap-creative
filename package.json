@@ -1,7 +1,7 @@
 {
     "title": "Creative",
     "name": "startbootstrap-creative",
-    "version": "6.0.0",
+    "version": "6.0.1",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -49,6 +49,7 @@
         "prettier": "1.19.1",
         "pug": "2.0.4",
         "sass": "1.26.3",
-        "shelljs": "0.8.3"
+        "shelljs": "0.8.3",
+        "upath": "1.2.0"
     }
 }
