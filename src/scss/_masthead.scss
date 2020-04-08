@@ -14,7 +14,7 @@ header.masthead {
     font-size: 2.25rem;
   }
   @include media-breakpoint-up(lg) {
-    height: 100vh;
+    height: 20vh;
     min-height: 40rem;
     padding-top: $navbar-height;
     padding-bottom: 0;
