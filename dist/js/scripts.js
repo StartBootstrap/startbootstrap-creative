@@ -53,9 +53,12 @@
     gallery: {
       enabled: true,
       navigateByImgClick: true,
-      preload: [0, 1]
+      preload: [0, 2],
+      tCounter: '<span class="mfp-counter">%curr% de %total%</span>'
     },
     image: {
+      cursor: null,
+      titleSrc: 'title',
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
