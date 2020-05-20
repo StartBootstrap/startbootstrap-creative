@@ -1,16 +1,12 @@
 {
     "title": "Creative",
-    "name": "startbootstrap-creative",
+    "name": "startbootstrap-creative-webpack",
     "version": "6.0.2",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "build": "webpack",
+        "start": "webpack-dev-server",
+        "clean": "rimraf _dist",
+        "deploy": "npm run build && git-directory-deploy --directory _dist --branch gh-pages"
     },
     "description": "Creative is a stylish one page HTML theme built with Bootstrap.",
     "keywords": [
@@ -35,21 +31,31 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+        "url": "https://github.com/atais/startbootstrap-creative-webpack.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.0"
+        "@fortawesome/fontawesome-free": "5.13.0",
+        "bootstrap": "4.5.0",
+        "jquery": "3.5.1",
+        "jquery.easing": "1.4.1",
+        "magnific-popup": "1.1.0",
+        "popper.js": "1.16.1"
     },
     "devDependencies": {
-        "autoprefixer": "9.8.0",
-        "browser-sync": "2.26.7",
-        "chokidar": "3.4.0",
-        "concurrently": "5.2.0",
-        "postcss": "7.0.30",
-        "prettier": "2.0.5",
+        "copy-webpack-plugin": "6.0.1",
+        "css-loader": "3.5.3",
+        "file-loader": "6.0.0",
+        "git-directory-deploy": "^1.5.1",
+        "html-webpack-plugin": "4.3.0",
+        "mini-css-extract-plugin": "0.9.0",
         "pug": "2.0.4",
+        "pug-loader": "2.4.0",
+        "rimraf": "3.0.2",
         "sass": "1.26.5",
-        "shelljs": "0.8.4",
-        "upath": "1.2.0"
+        "sass-loader": "8.0.2",
+        "url-loader": "4.1.0",
+        "webpack": "4.43.0",
+        "webpack-cli": "3.3.11",
+        "webpack-dev-server": "3.11.0"
     }
 }
