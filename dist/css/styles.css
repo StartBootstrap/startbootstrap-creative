@@ -1,11 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
 /*!
 * Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
 * Copyright 2013-2020 Start Bootstrap
@@ -74,34 +67,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-}
-
-#about-para {
-    color: #000000;
-    font-size: 20px;
-    font-family: 'Staatliches', cursive;
-}
-
-#about {
-    background-color: #8fbc8f;
-}
-
-#about-font {
-    font-family: 'Asap', sans-serif;
-}
-
-#projects {
-    background-color: #5A95ED;
-}
-
-#skills {
-    background-color: #8fbc8f;
-    font-size: 30px;
-    text-align: center;
-}
-
-.skill {
-    font-size: 25px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -194,7 +159,7 @@ sup {
 }
 
 a {
-  color: #B10906;
+  color: #f4623a;
   text-decoration: none;
   background-color: transparent;
 }
@@ -234,37 +199,6 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  margin-bottom: 15px;
-}
-
-.poke-img {
-    padding-right: 15px;
-}
-
-#project-font {
-    color: #B10906;
-    font-family: 'Teko', sans-serif;
-    font-size: 45px;
-}
-
-#first {
-    color: #B10906;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-#second {
-    color: #B10906;
-    font-family: 'Turret Road', cursive;
-}
-
-#third {
-    color: #B10906;
-    font-family: 'Tinos', serif;
-}
-
-#fourth {
-    color: #B10906;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 svg {
@@ -6160,6 +6094,10 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+.bg-primary {
+  background-color: #f4623a !important;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
@@ -9926,13 +9864,17 @@ a.text-dark:hover, a.text-dark:focus {
   color: #212529 !important;
 }
 
+.text-muted {
+  color: #6c757d !important;
+}
+
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-/* .text-white-50 {
+.text-white-50 {
   color: rgba(255, 255, 255, 0.5) !important;
-} */
+}
 
 .text-hide {
   font: 0/0 a;
@@ -10154,7 +10096,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 50%), url("https://i.imgur.com/ZDvItUF.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
