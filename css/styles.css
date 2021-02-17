@@ -252,6 +252,11 @@ img {
     width: 3%;
 }
 
+.resume {
+  height: 3%;
+  width: 3%;
+}
+
 #project-font {
     color: #B10906;
     font-family: 'Teko', sans-serif;
