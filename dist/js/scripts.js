@@ -1,9 +1,9 @@
 /*!
-    * Start Bootstrap - Creative v6.0.5 (https://startbootstrap.com/theme/creative)
-    * Copyright 2013-2021 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-    */
-    (function ($) {
+* Start Bootstrap - Creative v6.0.5 (https://startbootstrap.com/theme/creative)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+*/
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using anime.js
