@@ -2914,6 +2914,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -10845,7 +10846,7 @@ textarea.form-control-lg {
 }
 html {
   height: 100%;
-  scroll-padding-top: 4.5rem;
+  scroll-padding-top: calc(4.5rem - 1px);
 }
 
 body {
@@ -10853,18 +10854,12 @@ body {
   height: 100%;
 }
 
-hr.divider {
-  max-width: 3.25rem;
-  border-width: 0.2rem;
-  border-color: #f4623a;
+.page-section {
+  padding: 8rem 0;
 }
 
-hr.light {
-  border-color: #fff;
-}
-
-.btn {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .btn-xl {
@@ -10876,8 +10871,16 @@ hr.light {
   border-radius: 10rem;
 }
 
-.page-section {
-  padding: 8rem 0;
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f4623a;
+  opacity: 1;
+}
+
+hr.divider-light {
+  background-color: #fff;
 }
 
 #mainNav {
@@ -10945,7 +10948,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://source.unsplash.com/iusJ25iYu1c/1900x1080");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11008,8 +11011,4 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
-}
-
-.text-white-75 {
-  color: rgba(255, 255, 255, 0.75);
 }
