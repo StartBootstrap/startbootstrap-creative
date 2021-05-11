@@ -1,7 +1,18 @@
-// Global styling for this theme
+// 
+// Global
+// 
 
-body,
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+// 
+// https://caniuse.com/?search=scroll-padding
+
 html {
+    height: 100%;
+    scroll-padding-top: 4.5rem;
+}
+
+body {
     width: 100%;
     height: 100%;
 }

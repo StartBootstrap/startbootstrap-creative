@@ -53,7 +53,7 @@
             }
         }
         // Navbar styling applied when the page is scrolled
-        &.navbar-scrolled {
+        &.navbar-shrink {
             box-shadow: $box-shadow;
             background-color: $white;
             .navbar-brand {
