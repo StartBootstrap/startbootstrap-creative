@@ -9,7 +9,7 @@
 
 html {
     height: 100%;
-    scroll-padding-top: 4.5rem;
+    scroll-padding-top: calc(#{$navbar-height} - 1px);
 }
 
 body {
@@ -17,37 +17,12 @@ body {
     height: 100%;
 }
 
-//- Custom horizontal rules
-
-hr.divider {
-    max-width: 3.25rem;
-    border-width: 0.2rem;
-    border-color: $primary;
-}
-
-hr.light {
-    border-color: $white;
-}
-
-//- Button restyling
-
-.btn {
-    font-family: $font-family-sans-serif;
-}
-
-//- Custom XL button styling
-
-.btn-xl {
-    padding: 1.25rem 2.25rem;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10rem;
-}
-
 //- Page section styling
-
 .page-section {
     padding: 8rem 0;
+}
+
+// Custom utilities for this theme
+.text-white-75 {
+    color: fade-out($white, 0.25) !important;
 }

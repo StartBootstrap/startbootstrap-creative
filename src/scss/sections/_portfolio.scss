@@ -1,10 +1,15 @@
-// Styling for the portfolio section
+// 
+// Portfolio
+// 
+
 #portfolio {
     .container-fluid {
         max-width: 1920px;
+
         .portfolio-box {
             position: relative;
             display: block;
+
             .portfolio-box-caption {
                 display: flex;
                 align-items: center;
@@ -24,16 +29,19 @@
                 background: fade-out($primary, 0.1);
                 transition: opacity 0.25s ease;
                 text-align: center;
+
                 .project-category {
                     font-family: $font-family-sans-serif;
                     font-size: 0.85rem;
                     font-weight: 600;
                     text-transform: uppercase;
                 }
+
                 .project-name {
                     font-size: 1.2rem;
                 }
             }
+
             &:hover {
                 .portfolio-box-caption {
                     opacity: 1;
