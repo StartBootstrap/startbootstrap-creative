@@ -11379,7 +11379,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://scontent.flfw2-1.fna.fbcdn.net/v/t1.6435-9/236664026_140881478192201_7899757014282499542_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=e3f864&_nc_ohc=8bflR4E3ARkAX9MoK9N&_nc_ht=scontent.flfw2-1.fna&oh=b8bd729462de67825b15d17376c4fc0e&oe=619F4980");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
