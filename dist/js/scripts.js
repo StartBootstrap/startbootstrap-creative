@@ -57,3 +57,23 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+var i=0;
+var txt="Web Developer - Comp Sci Grad";
+var speed=200;
+function typewriter(){
+    if(i < txt.length){
+        document.getElementsByTagName("p")[0].innerHTML+=txt.charAt(i);
+        i++;
+        timer=setTimeout(typewriter,speed);
+    }
+    if(i==txt.length){
+        setTimeout(resetTW,3000);
+    }
+}
+function resetTW(){
+    i=0;
+    document.getElementsByTagName("p")[0].innerHTML='';
+    clearTimeout(timer);
+    typewriter();
+}
+typewriter(); 

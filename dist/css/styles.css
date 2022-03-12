@@ -56,6 +56,7 @@
   --bs-font-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient-white:linear-gradient(white, black 90%)
   --bs-body-font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -78,6 +79,8 @@
 
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -87,6 +90,10 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(45deg, darkslateblue, black);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 hr {
@@ -865,6 +872,7 @@ progress {
 .g-3,
 .gx-3 {
   --bs-gutter-x: 1rem;
+  
 }
 
 .g-3,
@@ -4209,7 +4217,7 @@ textarea.form-control-lg {
     z-index: 1000;
     flex-grow: 1;
     visibility: visible !important;
-    background-color: transparent;
+    background-color:transparent;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -7809,7 +7817,8 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: darkslateblue !important;
+  background: linear-gradient(black 0%, darkslateblue 100%);
 }
 
 .bg-secondary {
@@ -11299,7 +11308,11 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 1rem 0;
+}
+
+.page-min{
+  padding:2rem 0;
 }
 
 .text-white-75 {
@@ -11318,8 +11331,8 @@ body {
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
-  margin: 1.5rem auto;
-  background-color: #f4623a;
+  margin: .1rem auto;
+  background-color: lightblue ;
   opacity: 1;
 }
 
@@ -11329,7 +11342,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color:whitesmoke;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11353,7 +11366,7 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background: linear-gradient(black,transparent 100%);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -11392,7 +11405,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background:linear-gradient(to bottom, rgba(0,0,10,1), rgba(72,61,139,.8)), url('../assets/img/techbackground.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11440,7 +11453,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(0,0,0,.6);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11455,4 +11468,16 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+.zoom{
+  padding: 10px;
+  transition: transform .2s; 
+  margin: 0 ;
+}
+.zoom:hover{
+  transform: scale(1.5);
+}
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
 }
