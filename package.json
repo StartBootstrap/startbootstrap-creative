@@ -38,7 +38,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-creative.git"
     },
     "dependencies": {
-        "bootstrap": "5.1.3"
+        "bootstrap": "5.1.3",
+        "startbootstrap-creative": "^7.0.6"
     },
     "devDependencies": {
         "autoprefixer": "10.4.4",
@@ -48,7 +49,7 @@
         "postcss": "8.4.12",
         "prettier": "2.6.0",
         "pug": "3.0.2",
-        "sass": "1.49.9",
+        "sass": "^1.49.9",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
     }
