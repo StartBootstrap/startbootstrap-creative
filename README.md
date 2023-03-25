@@ -12,8 +12,6 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative?type=dev)
 
 ## Download and Installation
 
@@ -81,4 +79,4 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 
 ## Copyright and License
 
-Copyright 2013-2022 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
+Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
