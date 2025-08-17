@@ -1,0 +1,9 @@
+services:
+  myapp2: 
+    build:
+      context: .
+      dockerfile: multi-Dockerfile  
+    container_name: myapp2
+    restart: always  
+    ports:
+      - "8080:80"

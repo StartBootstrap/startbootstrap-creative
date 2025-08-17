@@ -2,6 +2,38 @@
 
 [Creative](https://startbootstrap.com/theme/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
+
+# StartBootstrap Creative - Dockerized Version
+
+This project is a Dockerized version of the StartBootstrap Creative template. Now you can run it anywhere using Docker or Docker Compose without manual setup.
+
+## Features
+- Fully containerized single-stage build (multi-stage optional).
+- Non-root user for secure builds.
+- Build and serve handled inside Docker.
+- Easy deployment using Docker Compose.
+
+## Prerequisites
+- Docker >= 20.x
+- Docker Compose (optional for local dev)
+
+<img width="1469" height="225" alt="Screenshot 2025-08-17 142714" src="https://github.com/user-attachments/assets/7795d7d7-537d-41fb-a98f-dbc6f1965f76" />
+
+<img width="1811" height="862" alt="Screenshot 2025-08-17 142732" src="https://github.com/user-attachments/assets/5f31e8df-359b-4430-97c4-fc2d005e2c54" />
+
+<img width="1902" height="276" alt="Screenshot 2025-08-17 143716" src="https://github.com/user-attachments/assets/da2d4ad8-05b1-4173-aa46-cafb1d977041" />
+<img width="1517" height="266" alt="Screenshot 2025-08-17 143733" src="https://github.com/user-attachments/assets/f589cc4e-ef87-4d4a-ad85-382ef7c643ea" />
+
+
+
+## How to Run
+### Using Docker
+```bash
+docker build -t my-app:latest .
+docker run -d -p 8080:8080 my-app:latest
+
+
+
 ## Preview
 
 [![Creative Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)

@@ -1,0 +1,20 @@
+# Dependency dirs
+node_modules
+npm-debug.log
+yarn.lock
+
+# Build artifacts
+dist
+coverage
+*.log
+
+# Git and configs
+.git
+.gitignore
+.dockerignore
+
+# Env and secrets
+.env
+*.pem
+*.key
+
