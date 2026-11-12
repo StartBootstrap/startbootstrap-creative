@@ -42,12 +42,12 @@
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
-        "browser-sync": "2.29.1",
+        "browser-sync": "^3.0.4",
         "chokidar": "3.5.3",
         "concurrently": "6.3.0",
-        "postcss": "8.4.21",
+        "postcss": "^8.5.32",
         "prettier": "2.8.6",
-        "pug": "3.0.2",
+        "pug": "^3.0.4",
         "sass": "1.60.0",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
