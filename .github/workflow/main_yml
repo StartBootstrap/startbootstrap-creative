@@ -1,0 +1,33 @@
+
+name: Frontend CI-CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v6
+
+      - name: Check Project Files
+        run: |
+          echo "Repository cloned successfully"
+          ls -la
+
+      - name: Validate HTML
+        run: |
+          test -f index.html
+          echo "HTML file exists"
+
+      - name: CI Pipeline Completed
+        run: echo "Frontend CI completed successfully"
